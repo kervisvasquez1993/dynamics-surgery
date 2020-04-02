@@ -25,11 +25,39 @@
 <body>
 
 <?php
- $args = array(
+ /*$args = array(
 'menu_class' => 'nav kervis-menu nav-justified flex-column flex-md-row text-center  ',
 'container_id' => 'nav_principal',
 'container_class' => 'collapse   navbar-collapse justify-content-center  justify-content-lg-end text-uppercase',
 'theme_location' => 'header_menu'
              );
                               wp_nav_menu($args);
-                         ?>
+                         */?>
+                         
+                         <!--
+                             maquetacion de menu con materialize
+// inicio, productos, quines somos, eventos, conactanos
+
+                    -->
+                    
+                    
+<nav class="menu-principal">
+      <div class="content-menu">
+          <a href="#" class="">Logo</a>
+          <ul id="" class="menus-dinamico">
+             <li><a href="sass.html">Inicio</a></li>
+             <li><a href="badges.html">Productos</a></li>
+             <li><a href="collapsible.html">Quienes Somos</a></li>
+             <li><a href="collapsible.html">Eventos</a></li>
+             <li><a href="collapsible.html">Contactanos</a></li>
+          </ul>
+          
+      </div>
+      <div class="content-menu2 input-field">
+         <?php get_search_form();?>
+</nav>
+
+
+            
+
+       
