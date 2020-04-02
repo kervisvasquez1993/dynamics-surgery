@@ -1,4 +1,6 @@
 <?php 
+// cargar cmb2 
+require_once dirname( __FILE__ ).'/cmb2.php';
 // Cargar los estilos y los script de la pagina
 function style(){
 
@@ -12,3 +14,14 @@ function style(){
     }
     
     add_action('wp_enqueue_scripts','style');
+
+    // agregamos soporte al theme 
+
+    function menus(){
+        register_nav_menus( array(
+            'header_menu' => __('header_menu', 'surgery'),
+            'iconos_menu' => __('icono_menu', 'surgery')
+
+        ));
+    }
+    add_action( 'init', 'menus' );
