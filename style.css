@@ -12,40 +12,92 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-nav {
-  display: flex;
-}
-.content-menu {
-  display: flex;
-  background: blue;
-  width: 80%;
-  justify-content: space-evenly;
-}
-.menus-dinamico li a,
-.content-menu > * {
-  color: black;
-}
-.content-menu2 {
-  display: flex;
-  background: red;
-  width: 20%;
-}
-.input-per {
-  display: flex;
-  border-right: black solid 3px;
-}
-.buscador {
-  background: black;
-}
-.flex-seach {
-  display: flex;
-  align-items: center;
-}
-.centrar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ocurtar {
+.responsive {
   display: none;
+}
+.menu-principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+@media (min-width: 414px) {
+  .menu-principal {
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+@media (min-width: 993px) {
+  .responsive {
+    display: block;
+  }
+  .menu-principal {
+    padding: 0;
+  }
+  nav {
+    display: flex;
+  }
+  .content-menu {
+    display: flex;
+    background: blue;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menus-dinamico li a,
+  .content-menu > * {
+    color: black;
+  }
+  .content-menu2 {
+    display: flex;
+    background: red;
+    width: 20%;
+  }
+  .menu-grande {
+    background: red;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .input-per {
+    display: flex;
+    border-right: black solid 3px;
+  }
+  .buscador {
+    background: black;
+  }
+  .flex-seach {
+    display: flex;
+    align-items: center;
+    background: blue;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .flex-seach input {
+    width: 60% !important;
+    background: blueviolet;
+  }
+  .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mostar {
+    display: block;
+  }
+  .search {
+    display: flex;
+    font-size: 24px;
+    height: 100%;
+    line-height: 56px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    cursor: pointer;
+  }
+
+  .ocultar {
+    display: none;
+  }
 }

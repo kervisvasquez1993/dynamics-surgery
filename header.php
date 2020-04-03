@@ -43,19 +43,46 @@
                     
 <nav class="menu-principal">
       <div class="content-menu">
-          <a href="#" class="">Logo</a>
-          <ul id="" class="menus-dinamico">
-             <li><a href="sass.html">Inicio</a></li>
-             <li><a href="badges.html">Productos</a></li>
-             <li><a href="collapsible.html">Quienes Somos</a></li>
-             <li><a href="collapsible.html">Eventos</a></li>
-             <li><a href="collapsible.html">Contactanos</a></li>
-          </ul>
+          <div class="menu-grande">
+            <a href="<?php echo esc_url(home_url('/'));?>" class="">Logo</a>
           
-      </div>
-      <div class="content-menu2 input-field">
-         <?php get_search_form();?>
+            <ul id="" class="menus-dinamico responsive">
+               <li><a href="sass.html">Inicio</a></li>
+               <li><a href="badges.html">Productos</a></li>
+               <li><a href="collapsible.html">Quienes Somos</a></li>
+               <li><a href="collapsible.html">Eventos</a></li>
+               <li><a href="collapsible.html">Contactanos</a></li>
+            </ul>
+          </div>
+          
+      
+          <div class="content-menu2 responsive input-field">
+             <div class="search">
+                <i class="material-icons">search</i>
+             </div>  
+            <?php get_search_form();?>
+          </div>
+     </div>
+     <a href="#" data-target="slide-out" class="sidenav-trigger mostrar">
+         <i class="material-icons">menu</i>
+     </a>
 </nav>
+
+
+  <ul id="slide-out" class="sidenav">
+     <li><a href="sass.html">Inicio</a></li>
+     <li><a href="badges.html">Productos</a></li>
+     <li><a href="collapsible.html">Quienes Somos</a></li>
+     <li><a href="collapsible.html">Eventos</a></li>
+     <li><a href="collapsible.html">Contactanos</a></li>
+     <div class="content-menu2  input-field">
+        <div class="search">
+          <i class="material-icons">search</i>
+        </div>  
+         <?php get_search_form();?>
+     </div>
+  </ul>
+  
 
 
             
