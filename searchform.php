@@ -6,6 +6,6 @@
          title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 
 <button type="submit" class="waves-effect center red waves-light btn-small centrar" name="post_type" value="post">
-    <i class="material-icons ">send</i>   
+    <i class="material-icons">send</i>   
 </button>
 </form>

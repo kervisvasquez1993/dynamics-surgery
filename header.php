@@ -24,15 +24,7 @@
 </head>
 <body>
 
-<?php
- /*$args = array(
-'menu_class' => 'nav kervis-menu nav-justified flex-column flex-md-row text-center  ',
-'container_id' => 'nav_principal',
-'container_class' => 'collapse   navbar-collapse justify-content-center  justify-content-lg-end text-uppercase',
-'theme_location' => 'header_menu'
-             );
-                              wp_nav_menu($args);
-                         */?>
+
                          
                          <!--
                              maquetacion de menu con materialize
@@ -46,13 +38,10 @@
           <div class="menu-grande">
             <a href="<?php echo esc_url(home_url('/'));?>" class="">Logo</a>
           
-            <ul id="" class="menus-dinamico responsive">
-               <li><a href="sass.html">Inicio</a></li>
-               <li><a href="badges.html">Productos</a></li>
-               <li><a href="collapsible.html">Quienes Somos</a></li>
-               <li><a href="collapsible.html">Eventos</a></li>
-               <li><a href="collapsible.html">Contactanos</a></li>
-            </ul>
+            <?php
+                $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'menus-dinamico responsive',);
+                wp_nav_menu($args);     
+            ?>
           </div>
           
       
@@ -70,14 +59,14 @@
 
 
   <ul id="slide-out" class="sidenav">
-     <li><a href="sass.html">Inicio</a></li>
-     <li><a href="badges.html">Productos</a></li>
-     <li><a href="collapsible.html">Quienes Somos</a></li>
-     <li><a href="collapsible.html">Eventos</a></li>
-     <li><a href="collapsible.html">Contactanos</a></li>
+    
+     <?php
+        $args = array('theme_location' => 'header_menu','menu_class'=> 'sidenav', 'menu_id' => 'slide-out');
+                wp_nav_menu($args);     
+     ?>
      <div class="content-menu2  input-field">
         <div class="search">
-          <i class="material-icons">search</i>
+          <i class="material-icons responsive-icons">search</i>
         </div>  
          <?php get_search_form();?>
      </div>
