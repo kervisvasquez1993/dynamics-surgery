@@ -62,10 +62,10 @@
         </div>
       </div>
 </section>
-<section class="section no-pad-bot">
+<section class="section no-pad-bot ">
       
-        <div class="row">
-            <div class="col l7 m6 wrappers s12">
+        <div class="row producto-principal ">
+            <div class="wrappers ">
               
                 <h3 class="center">Titulo del producto</h3>
                 <p>
@@ -74,30 +74,62 @@
                 <a href="#" class="btn ">LLER MAS</a>
 
             </div>
-            <div class="col  l5 m6 s12">
+            <div class= "product-destacado">
                 <img src="<?php echo get_template_directory_uri();?>/img/test.jpg" alt="">
         
             </div>
         </div>
    
 </section>
-  <section>
+  <section class="section green h-40 no-pad-bot">
+            <h3 class="center">Nuestros Productos</h3>
+            <div class="carousel">
+              <a class="carousel-item" href="#one!"><img src=""></a>
+              <a class="carousel-item" href="#two!"><img src=""></a>
+              <a class="carousel-item" href="#three!"><img src=""></a>
+              <a class="carousel-item" href="#four!"><img src=""></a>
+              <a class="carousel-item" href="#five!"><img src=""></a>
+            </div>
 
-  <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
-    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
-    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
-    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
-    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
-  </div>
-
-  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
-    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
-    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
-    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
-  </div>
+            <div class="carousel carousel-slider">
+              <a class="carousel-item" href="#one!"><img src=""></a>
+              <a class="carousel-item" href="#two!"><img src=""></a>
+              <a class="carousel-item" href="#three!"><img src=""></a>
+              <a class="carousel-item" href="#four!"><img src=""></a>
+            </div>
       
+  </section>
+  <section >
+       <h3 class="center titulo">Eventos</h3>
+       <div class="eventos-front">
+                    
+                <div class="card-dynamics">
+                     <div class="card">
+                       <div class="card-image">
+                         <img src="<?php echo get_template_directory_uri();?>/img/test.jpg">
+                       </div>
+                       <div class="card-content">
+                          <span class="card-title">Card Title</span>
+                           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                       </div>
+                     </div>
+                </div>
+
+               <div class="card-dynamics ">
+                     <div class="card">
+                       <div class="card-image">
+                         <img src="<?php echo get_template_directory_uri();?>/img/test.jpg">
+                       </div>
+                       <div class="card-content">
+                          <span class="card-title">Card Title</span>
+                           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                       </div>
+                     </div>
+               </div>
+                  
+        </div> 
+        <h3 class="center titulo"> <a href="#" class="btn">Ver mas</a></h3>
+   
   </section>
 
                           

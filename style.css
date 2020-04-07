@@ -12,9 +12,39 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.eventos-front {
+  z-index: 100 !important;
+}
 .responsive {
   display: none;
 }
+.footer,
+.footer1,
+.footer2,
+.footer3 {
+  display: flex;
+}
+.footer {
+  width: 100vw;
+  justify-content: ;
+  align-items: center;
+  padding: 10px;
+  min-height: 50px;
+  background: green;
+  flex-direction: column;
+}
+.footer1 {
+  width: 80%;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.footer1 .iconos {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
 .menu-principal {
   display: flex;
   justify-content: space-between;
@@ -77,18 +107,79 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 img {
   width: 100%;
+  height: 100%;
 }
 .wrappers {
   padding: 50px !important;
+}
+.h-40 {
+  min-height: 40vh;
+}
+
+.product-destacado img {
+  width: 100%;
+}
+
+.path {
+  clip-path: polygon(50% 0, 100% 68%, 100% 0);
+  position: absolute;
+  z-index: 0;
 }
 @media (min-width: 414px) {
   .menu-principal {
     justify-content: space-around;
     padding: 0;
   }
+  .footer1 .iconos {
+    width: 20%;
+  }
 }
 
+@media (min-width: 768px) {
+  .wrappers {
+    width: 60vw;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer1 {
+    width: 50%;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer1 .iconos {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  .product-destacado {
+    width: 40vw !important;
+  }
+  .eventos-front {
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-dynamics {
+    width: 45vw !important;
+  }
+  .producto-principal {
+    display: flex;
+    align-items: center;
+  }
+}
 @media (min-width: 993px) {
+  .footer1 .iconos {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+  }
+
+  .card-dynamics {
+    width: 35vw !important;
+  }
   .responsive-icons {
     display: block;
   }
@@ -161,5 +252,13 @@ img {
 
   .ocultar {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .eventos-front {
+    justify-content: space-around;
+  }
+  .card-dynamics {
+    width: 30vw !important;
   }
 }
