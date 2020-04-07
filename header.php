@@ -24,6 +24,7 @@
 </head>
 <body>
 
+<header class="header">
 
                          
                          <!--
@@ -32,7 +33,7 @@
 
                     -->
                     
-                    
+<div>          
 <nav class="menu-principal">
       <div class="content-menu">
           <div class="menu-grande">
@@ -60,19 +61,17 @@
 
   <ul id="slide-out" class="sidenav">
     
-     <?php
-        $args = array('theme_location' => 'header_menu','menu_class'=> 'sidenav', 'menu_id' => 'slide-out');
+        <?php
+                $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'kervis-nav',);
                 wp_nav_menu($args);     
-     ?>
-     <div class="content-menu2  input-field">
-        <div class="search">
-          <i class="material-icons responsive-icons">search</i>
-        </div>  
-         <?php get_search_form();?>
+            ?>
+        <div class="form-nav">
+            <?php get_search_form();?>
+         </div>
      </div>
   </ul>
   
-
+  </div>
 
             
 
