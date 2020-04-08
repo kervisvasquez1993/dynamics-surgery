@@ -1,6 +1,14 @@
 <?php 
 // cargar cmb2 
-require_once dirname( __FILE__ ).'/cmb2.php';
+
+if( !class_exists("CMB2") ){
+    require_once( dirname(__FILE__)."/CMB2/init.php" );
+    
+}
+require_once ( get_template_directory() . '/CMB2/cmb2.php' );
+require_once dirname( __FILE__ ).'/inc/custom-field.php';
+
+require_once dirname( __FILE__ ).'/inc/posttype.php';
 // Cargar los estilos y los script de la pagina
 
 function style(){
