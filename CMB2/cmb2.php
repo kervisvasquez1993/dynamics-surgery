@@ -106,7 +106,8 @@ add_action( 'cmb2_admin_init', 'yourprefix_register_demo_metabox' );
 /**
  * Hook in and add a demo metabox. Can only happen on the 'cmb2_admin_init' or 'cmb2_init' hook.
  */
-function yourprefix_register_demo_metabox() {
+function yourprefix_register_demo_metabox() 
+{
 	/**
 	 * Sample metabox to demonstrate each field type included
 	 */

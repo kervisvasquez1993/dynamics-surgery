@@ -12,6 +12,9 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.icono {
+  padding: 10px 0;
+}
 .eventos-front {
   z-index: 100 !important;
 }
@@ -125,6 +128,16 @@ img {
   position: absolute;
   z-index: 0;
 }
+.header-productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 25vh;
+}
+.wrapper-card {
+  padding: 80px 0;
+}
 @media (min-width: 414px) {
   .menu-principal {
     justify-content: space-around;
@@ -171,6 +184,24 @@ img {
   }
 }
 @media (min-width: 993px) {
+  .iconos-nosotros-hijos {
+    width: 45%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  .iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .parent-quienes-somos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 0px;
+  }
   .footer1 .iconos {
     display: flex;
     width: 20%;
