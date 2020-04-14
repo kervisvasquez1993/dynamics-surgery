@@ -138,6 +138,39 @@ img {
 .wrapper-card {
   padding: 80px 0;
 }
+.contactanos-header {
+  padding: 0 35px;
+}
+.iconos-internos-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px !important;
+}
+.b-r {
+  border-top: 2px solid red;
+}
+.w-50 {
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.align-icon {
+  display: flex;
+  align-items: center;
+}
+.p-0-5 {
+  padding: 0 20px;
+}
+.comunicate,
+.formulario {
+  padding: 30px 0;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 @media (min-width: 414px) {
   .menu-principal {
     justify-content: space-around;
@@ -149,6 +182,31 @@ img {
 }
 
 @media (min-width: 768px) {
+  .card-padre {
+    width: 80%;
+    padding: 50px 0;
+  }
+  .contact-iconos {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-between;
+  }
+  .contactanos-header {
+    padding: 0;
+    display: flex;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .p-0-50 {
+    padding: 25px 40px;
+  }
+  .b-r {
+    border-top: 0;
+    border-left: 2px solid red;
+    padding: 0 50px;
+  }
   .wrappers {
     width: 60vw;
   }
@@ -184,6 +242,9 @@ img {
   }
 }
 @media (min-width: 993px) {
+  .card-padre {
+    width: 85%;
+  }
   .iconos-nosotros-hijos {
     width: 45%;
 
@@ -196,6 +257,7 @@ img {
     flex-wrap: wrap;
   }
   .parent-quienes-somos {
+    padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
