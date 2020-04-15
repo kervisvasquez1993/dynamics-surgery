@@ -164,13 +164,23 @@ img {
 }
 .comunicate,
 .formulario {
-  padding: 30px 0;
+  padding: 30px 20px;
+}
+.formulario {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-form {
+  width: 20%;
 }
 .flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 @media (min-width: 414px) {
   .menu-principal {
     justify-content: space-around;
@@ -236,6 +246,7 @@ img {
   .card-dynamics {
     width: 45vw !important;
   }
+  .producto-principal-single,
   .producto-principal {
     display: flex;
     align-items: center;

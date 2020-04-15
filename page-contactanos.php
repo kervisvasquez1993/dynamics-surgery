@@ -34,7 +34,7 @@
             <h3>COMUNÍCATE CON NOSOTROS</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quaerat modi saepe ipsum sed vitae quibusdam, unde voluptatum dolore veritatis, repudiandae provident ab. Placeat amet libero, et molestiae incidunt consectetur?</p>
         </div>
-        <form class="row formulario">
+        <form class="row blue formulario">
             <div class="col s12 ">
               <div class="row">
                 <div class="input-field col s12 m4">
@@ -59,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <input type="submit" class="btn">
+            <input type="submit" class="btn btn-form">
         </form>
         
 </div>
