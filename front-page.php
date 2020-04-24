@@ -62,7 +62,7 @@
         </div>
       </div>
 </section>
-<section class="section no-pad-bot ">
+<section class="section container no-pad-bot ">
       
         <div class="row producto-principal ">
             <div class="wrappers ">
@@ -79,26 +79,17 @@
         
             </div>
         </div>
-   
+        
 </section>
-  <section class="section green h-40 no-pad-bot">
-            <h3 class="center">Nuestros Productos</h3>
-            <div class="carousel">
-              <a class="carousel-item" href="#one!"><img src=""></a>
-              <a class="carousel-item" href="#two!"><img src=""></a>
-              <a class="carousel-item" href="#three!"><img src=""></a>
-              <a class="carousel-item" href="#four!"><img src=""></a>
-              <a class="carousel-item" href="#five!"><img src=""></a>
-            </div>
-
-            <div class="carousel carousel-slider">
-              <a class="carousel-item" href="#one!"><img src=""></a>
-              <a class="carousel-item" href="#two!"><img src=""></a>
-              <a class="carousel-item" href="#three!"><img src=""></a>
-              <a class="carousel-item" href="#four!"><img src=""></a>
-            </div>
+<img src="<?php echo get_template_directory_uri();?>/img/prueba1.jpeg">
+<div class="carousel">
+    <a class="carousel-item" href="#one!"></a>
+    <a class="carousel-item" href="#two!"><img src="<?php echo get_template_directory_uri();?>/img/prueba1.jpeg"></a>
+    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/350/230/"></a>
+    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/350/230/"></a>
+    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/350/230/"></a>
+  </div>
       
-  </section>
   <section >
        <h3 class="center titulo">Eventos</h3>
        <div class="eventos-front">
