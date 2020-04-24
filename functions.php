@@ -59,3 +59,4 @@ function widgets_sidebar(){
 
     ));
 }
+

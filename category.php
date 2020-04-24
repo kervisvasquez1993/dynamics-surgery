@@ -1,24 +1,11 @@
-<?php get_header();
-  
-     $args = array( 
-           'post_type' => 'post', 
-           'category_name' => array('ejemplo'), 
-           'orderby' => 'date', 
-           'order' => 'DESC',
-           'showposts' => 4);
- 
-     $wp_query = new WP_Query($args);
+<?php get_header() ;
+   $list_subcat = array();
+   $cat;
+   $the_query = new WP_Query( array( 'cat' => $cat, 'posts_per_page' => 10 ) );
+   $parent_cat = get_category_link($cat);
+   $cat2 = $the_query->query[cat];
    
-     if($wp_query->have_posts()) :
- while($wp_query->have_posts()) :
- $wp_query->the_post(); ?>
- 
-     <a  href='<?php the_permalink(); ?>'><?php get_the_title(); ?> </a>
- 
-     <?php   endwhile; endif; 
-     wp_reset_query(); 
 ?>
-
 
 
 

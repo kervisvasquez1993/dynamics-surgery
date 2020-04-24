@@ -1,4 +1,7 @@
-<?php get_header();?>
+<?php get_header();
+shortcode_lisscat();
+?>
+
 <div class="container">
     <section class="row producto-principal-single">
                 <div class="wrappers-single ">
