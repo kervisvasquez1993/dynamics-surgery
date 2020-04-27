@@ -24,7 +24,7 @@
            <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                 <div>
-                     <h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+                     <h4><a href=""><?php the_title(); ?></h4>
                 </div>
 
             <?php endwhile; ?>

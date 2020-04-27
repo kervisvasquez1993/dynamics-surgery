@@ -7,7 +7,7 @@ if( !class_exists("CMB2") ){
 }
 require_once ( get_template_directory() . '/CMB2/cmb2.php' );
 require_once dirname( __FILE__ ).'/inc/custom-field.php';
-require_once dirname( __FILE__ ).'/inc/query-post-type.php';
+require_once dirname( __FILE__ ).'/inc/query-posts-type.php';
 
 
 // Cargar los estilos y los script de la pagina
@@ -61,4 +61,31 @@ function widgets_sidebar(){
     ));
 }
 
+// limitar el contenido de las palabras 
 
+    //Limitar con la funcion get_the_excerpt
+    function excerpt($limit) {
+        $excerpt = explode(' ', get_the_excerpt(), $limit);
+        if (count($excerpt)>=$limit) {
+        array_pop($excerpt);
+        $excerpt = implode(" ",$excerpt).'...';
+        } else {
+        $excerpt = implode(" ",$excerpt);
+        }
+        $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+        return $excerpt;
+      }
+      //Limitar con la funcion get_the_content
+      function content($limit) {
+        $content = explode(' ', get_the_content(), $limit);
+        if (count($content)>=$limit) {
+        array_pop($content);
+        $content = implode(" ",$content).'...';
+        } else {
+        $content = implode(" ",$content);
+        }
+        $content = preg_replace('/[.+]/','', $content);
+        $content = apply_filters('the_content', $content);
+        $content = str_replace(']]>', ']]>', $content);
+        return $content;
+      }
