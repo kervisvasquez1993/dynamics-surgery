@@ -9,11 +9,8 @@
        <h2 class="center">Titulo Dynamics surgery </h2>
     </div>
 <?php endwhile;?>
-<div class="container">
-    <div class="menu-interno">
-       <a href="#">Inicio</a>
-       <a href="#">Productos</a>
-    </div>
+<?php get_template_part( 'template-parts/menu', 'interno' ); ?>
+
     <h2>Eventos</h2>
     
     <div class="row">

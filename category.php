@@ -1,34 +1,43 @@
-<?php get_header() ;
-// variables para obtener categorias
-   $list_subcat = array();
-   $cat; 
-   $the_query = new WP_Query( array( 'cat' => $cat, 'posts_per_page' => 10 ) );
-   $parent_cat = get_category_link($cat);
-   $cat2 = $the_query->query[cat]; //id de la categoria    
-  // echo get_cat_name($cat2); // nombre de la categoria 
-//fin de variables
-
- $categories = get_categories(array('orderby' => 'name','order'   => 'ASC')); //traer las categorias 
-
-foreach( $categories as $category ) {
-   $category_link = sprintf( 
-       '<a href="%1$s" alt="%2$s">%3$s</a>',
-       esc_url( get_category_link( $category->term_id ) ),
-       esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
-       esc_html( $category->name )
-   );
-    
-   echo '<p>' . sprintf($category_link ) . '</p> ';
-  
-} 
-
- 
-
-
+<?php
+/**
+ *Template Name: categoria 
+ **/
+   get_header() ;
+   
 ?>
 
+<div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
+   <h2 class="center">Titulo Dynamics surgery </h2>
+</div>
+<div class="container">
+   <div class="row">
+      <?php require_once dirname( __FILE__ ).'/template-parts/list-category.php';?>
+   </div>
+      <div class="row">
+           <div class="img-category blue">
+               <img src="" alt="" class=>
+           </div>
+           <div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto sint hic, tempora officia at reiciendis ratione et accusamus velit mollitia recusandae, magni fuga sed, autem dolorum! Quaerat quidem reiciendis officia.</p>
+           </div>
+           <div>
+           <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <div>
+                     <h4><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+                </div>
+
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
+
+           </div>
+      </div>
+</div>
 
 
 
 
 <?php get_footer();?>
+
+
