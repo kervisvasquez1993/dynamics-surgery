@@ -1,5 +1,5 @@
 <?php get_header();
-shortcode_lisscat();
+
 ?>
 
 <div class="container">

@@ -19,8 +19,10 @@
               <p>lorem ipsup lorem ipsuplorem ipsup lorem ipsuplorem ipsuplorem ipsuplorem ipsup</p>
           </header>
         </section>
-        <section class="row wrapper-card">
-           <?php kervis_query_productos(-1);?>
+        <section class="container">
+           <div class="row wrapper-card">
+               <?php kervis_query_productos(-1);?>
+           </div>
         </section>
   </div>
 

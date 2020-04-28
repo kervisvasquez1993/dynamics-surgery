@@ -11,8 +11,9 @@
 <?php endwhile;?>
 <?php get_template_part( 'template-parts/menu', 'interno' ); ?>
 
+  
+    <div class="container">
     <h2>Eventos</h2>
-    
     <div class="row">
 
        <section class=" col s12 m8 ">
@@ -69,6 +70,7 @@
     <?php get_sidebar()?>
 </div>
 
+</div>
 </div>
         
 <?php get_footer();?>
