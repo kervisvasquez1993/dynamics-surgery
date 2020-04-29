@@ -1,6 +1,9 @@
 <?php get_header();
-
+  
+  echo get_post_meta( get_the_ID(), 'test',true );
+  echo "hola";
 ?>
+
 
 <div class="container">
     <section class="row producto-principal-single">

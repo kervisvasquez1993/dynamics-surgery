@@ -2,7 +2,7 @@
 function kervis_query_productos($cantidad = -1)
 {
     $args = array(
-        'post_type' => 'producto',
+        'post_type' => 'productos',
         'posts_per_page' => $cantidad
 
     );

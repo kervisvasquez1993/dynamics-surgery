@@ -631,16 +631,19 @@ function yourprefix_register_user_profile_metabox() {
 
 }
 
+/* *___* Campos para las categorias  *____* 
+
 add_action( 'cmb2_admin_init', 'yourprefix_register_taxonomy_metabox' );
 /**
  * Hook in and add a metabox to add fields to taxonomy terms
- */
-function yourprefix_register_taxonomy_metabox() {
+ *//*
+function yourprefix_register_taxonomy_metabox()
+ {
 
 	/**
 	 * Metabox to add fields to categories and tags
 	 */
-	$cmb_term = new_cmb2_box( array(
+	/*$cmb_term = new_cmb2_box( array(
 		'id'               => 'yourprefix_term_edit',
 		'title'            => esc_html__( 'Category Metabox', 'cmb2' ), // Doesn't output for term boxes
 		'object_types'     => array( 'term' ), // Tells CMB2 to use term_meta vs post_meta
@@ -658,19 +661,20 @@ function yourprefix_register_taxonomy_metabox() {
 
 	$cmb_term->add_field( array(
 		'name' => esc_html__( 'Term Image', 'cmb2' ),
-		'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+		'desc' => esc_html__( 'test field description (optional)', 'cmb2' ),
 		'id'   => 'yourprefix_term_avatar',
 		'type' => 'file',
 	) );
 
 	$cmb_term->add_field( array(
 		'name' => esc_html__( 'Arbitrary Term Field', 'cmb2' ),
-		'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+		'desc' => esc_html__( 'field description (optionalll)', 'cmb2' ),
 		'id'   => 'yourprefix_term_term_text_field',
 		'type' => 'text',
 	) );
 
 }
+*/
 
 add_action( 'cmb2_admin_init', 'yourprefix_register_theme_options_metabox' );
 /**

@@ -17,7 +17,7 @@ $categories = get_categories(array('orderby' => 'name','order'   => 'ASC')); //t
        esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
        esc_html( $category->name )
    );
- echo '<p>' . sprintf($category_link ) . '</p> ';
+   echo '<p>' . sprintf($category_link ) . '</p> ';
   
 } 
 ?>

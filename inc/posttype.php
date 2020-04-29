@@ -1,32 +1,32 @@
 <?php 
-add_action( 'init', 'producto' );
-function producto() {
+/*add_action( 'init', 'productos' );
+function productos() {
     $labels = array(
-        'name'               => _x( 'producto', 'surgery' ),
-        'singular_name'      => _x( 'producto', 'post type singular name', 'surgery' ),
-        'menu_name'          => _x( 'producto', 'admin menu', 'surgery' ),
-        'name_admin_bar'     => _x( 'producto', 'add new on admin bar', 'surgery' ),
+        'name'               => _x( 'productos', 'surgery' ),
+        'singular_name'      => _x( 'productos', 'post type singular name', 'surgery' ),
+        'menu_name'          => _x( 'productos', 'admin menu', 'surgery' ),
+        'name_admin_bar'     => _x( 'productos', 'add new on admin bar', 'surgery' ),
         'add_new'            => _x( 'Add New', 'book', 'surgery' ),
-        'add_new_item'       => __( 'Add New producto', 'surgery' ),
-        'new_item'           => __( 'New producto', 'surgery' ),
-        'edit_item'          => __( 'Edit producto', 'surgery' ),
-        'view_item'          => __( 'View producto', 'surgery' ),
-        'all_items'          => __( 'All producto', 'surgery' ),
-        'search_items'       => __( 'Search producto', 'surgery' ),
-        'parent_item_colon'  => __( 'Parent producto:', 'surgery' ),
-        'not_found'          => __( 'No producto found.', 'surgery' ),
-        'not_found_in_trash' => __( 'No producto found in Trash.', 'surgery' )
+        'add_new_item'       => __( 'Add New productos', 'surgery' ),
+        'new_item'           => __( 'New productos', 'surgery' ),
+        'edit_item'          => __( 'Edit productos', 'surgery' ),
+        'view_item'          => __( 'View productos', 'surgery' ),
+        'all_items'          => __( 'All productos', 'surgery' ),
+        'search_items'       => __( 'Search productos', 'surgery' ),
+        'parent_item_colon'  => __( 'Parent productos:', 'surgery' ),
+        'not_found'          => __( 'No productos found.', 'surgery' ),
+        'not_found_in_trash' => __( 'No productos found in Trash.', 'surgery' )
     );
 
     $args = array(
         'labels'             => $labels,
-        'description'        => __( 'Description.', 'producto' ),
+        'description'        => __( 'Description.', 'productos' ),
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'producto' ),
+        'rewrite'            => array( 'slug' => 'productos' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
@@ -35,8 +35,9 @@ function producto() {
         'taxonomies'          => array( 'category' ),
     );
 
-    register_post_type( 'producto', $args );
+    register_post_type( 'productos', $args );
 }
+*/
 
 add_action( 'init', 'eventos' );
 function eventos() {
