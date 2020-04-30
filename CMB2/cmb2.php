@@ -498,11 +498,12 @@ function yourprefix_register_about_page_metabox() {
 
 }
 
-add_action( 'cmb2_admin_init', 'yourprefix_register_repeatable_group_field_metabox' );
+add_action( 'cmb2_admin_init', 'beneficios_caracteristicas' );
 /**
  * Hook in and add a metabox to demonstrate repeatable grouped fields
  */
-function yourprefix_register_repeatable_group_field_metabox() {
+function beneficios_caracteristicas() 
+{
 
 	/**
 	 * Repeatable Field Groups
@@ -510,7 +511,7 @@ function yourprefix_register_repeatable_group_field_metabox() {
 	$cmb_group = new_cmb2_box( array(
 		'id'           => 'yourprefix_group_metabox',
 		'title'        => esc_html__( 'Repeating Field Group', 'cmb2' ),
-		'object_types' => array( 'page' ),
+		'object_types' => array( 'post' ),
 	) );
 
 	// $group_field_id is the field id string, so in this case: 'yourprefix_group_demo'

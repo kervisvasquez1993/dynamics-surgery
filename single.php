@@ -1,7 +1,7 @@
 <?php get_header();
   
   echo get_post_meta( get_the_ID(), 'test',true );
-  echo "hola";
+  while(have_posts()): the_post();
 ?>
 
 
@@ -9,15 +9,15 @@
     <section class="row producto-principal-single">
                 <div class="wrappers-single ">
                   
-                    <h3>Titulo del producto</h3>
+                    <h3><?php the_title();?></h3>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus incidunt ullam, repellendus mollitia veniam modi id assumenda saepe harum, quo non repudiandae tenetur omnis, dolor iure magnam laboriosam inventore at.
+                        <?php the_content();?>
                     </p>
                     <a href="#" class="btn ">Descargar Brochure</a>
     
                 </div>
                 <div class= "product-destacado-single">
-                    <img src="<?php echo get_template_directory_uri();?>/img/test.jpg" alt="">
+                    <?php the_post_thumbnail( 'mediano', array('class' => 'card-img-top') )?>
                 </div>
     </section>
     <h3 class="center">Beneficios y caracteristicas</h3>
@@ -53,4 +53,5 @@
     
     </section>
 </div>
+<?php endwhile;?>
 <?php get_footer();?>
