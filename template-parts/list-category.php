@@ -2,14 +2,15 @@
 // variables para obtener categorias
 $list_subcat = array();
 $cat; 
-$the_query = new WP_Query( array( 'cat' => $cat, 'posts_per_page' => 10 ) );
+$the_query = new WP_Query( array( 'cat' => $cat, 'posts_per_page' => -1 ) );
 $parent_cat = get_category_link($cat);
 $cat2 = $the_query->query[cat]; //id de la categoria    
 // echo get_cat_name($cat2); // nombre de la categoria 
 //fin de variables
 
-$categories = get_categories(array('orderby' => 'name','order'   => 'ASC')); //traer las categorias de 
-  foreach( $categories as $category )
+$categories = get_categories(array('orderby' => 'name','order'   => 'ASC', "hide_empty" => false)); //traer las categorias de 
+    
+foreach( $categories as $category )
    {
    $category_link = sprintf( 
        '<a href="%1$s" alt="%2$s">%3$s</a>',

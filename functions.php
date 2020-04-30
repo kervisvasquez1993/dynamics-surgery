@@ -8,6 +8,7 @@ if( !class_exists("CMB2") ){
 require_once ( get_template_directory() . '/CMB2/cmb2.php' );
 require_once dirname( __FILE__ ).'/inc/custom-field.php';
 require_once dirname( __FILE__ ).'/inc/query-posts-type.php';
+require_once dirname( __FILE__ ).'/inc/field-category.php';
 
 
 // Cargar los estilos y los script de la pagina
@@ -65,7 +66,7 @@ function widgets_sidebar(){
 
     //Limitar con la funcion get_the_excerpt
     function excerpt($limit) {
-        $excerpt = explode(' ', get_the_excerpt(), $limit);
+        $excerpt = explode(' ', category_description($a), $limit);
         if (count($excerpt)>=$limit) {
         array_pop($excerpt);
         $excerpt = implode(" ",$excerpt).'...';
@@ -89,3 +90,15 @@ function widgets_sidebar(){
         $content = str_replace(']]>', ']]>', $content);
         return $content;
       }
+
+      // agregar campo a la seccion de categoria 
+      
+      add_action ( 'edit_category_form_fields', 'extra_category_fields');
+//add extra fields to category edit form callback function
+
+//eliminar wysiwyng de productos
+add_action('init', 'init_remove_support',100);
+function init_remove_support(){
+    $post_type = 'productos';
+    remove_post_type_support( $post_type, 'editor');
+}

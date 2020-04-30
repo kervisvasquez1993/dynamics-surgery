@@ -1,7 +1,8 @@
 <?php
  get_header() ;
+ $category = get_category( get_query_var( 'cat' ) );
 ?>
-
+ 
 <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
    <h2 class="center">Titulo Dynamics surgery </h2>
 </div>
@@ -17,14 +18,19 @@
         <div class="sister2">
                 <h4><?php echo get_cat_name($cat2);?></h4>
                 <div class="img-category blue">
-                    <?php   $avatar = get_term_meta( get_queried_object_id(), 'img_category', true ); ?>
+                    <?php   //$avatar = get_term_meta( get_queried_object_id(), 'img_category', true );
+                           $avatar = get_field('img_category', 'category_'. $cat .''); 
+                    ?>
                     <img src="<?php echo $avatar?>" alt="">
+
+                    
+                </div>
+                <div class="description">
+                       <?php echo category_description($cat); ?>
+                       
                 </div>
                 <div>
-                   <?php 
-                        
-                   
-                     
+                   <?php
                      ?>
                 </div>
                 <div>

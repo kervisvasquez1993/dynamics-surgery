@@ -81,14 +81,8 @@
         </div>
         
 </section>
-<img src="<?php echo get_template_directory_uri();?>/img/prueba1.jpeg">
-<div class="carousel">
-    <a class="carousel-item" href="#one!"></a>
-    <a class="carousel-item" href="#two!"><img src="<?php echo get_template_directory_uri();?>/img/prueba1.jpeg"></a>
-    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/350/230/"></a>
-    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/350/230/"></a>
-    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/350/230/"></a>
-  </div>
+
+
       
   <section >
        <h3 class="center titulo">Eventos</h3>

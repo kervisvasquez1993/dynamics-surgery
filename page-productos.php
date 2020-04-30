@@ -3,17 +3,29 @@
   get_header();
    
 ?>
-<div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
-   <h2 class="center">Titulo Dynamics surgery </h2>
-</div>
-<?php get_template_part( 'template-parts/menu', 'interno' );
-   
-?>
-<?php echo get_term_meta( get_the_ID(), 'yourprefix_term_avatar',true )?>
-<section class="container">
-   <div class="flex-category">
-       <?php require_once dirname( __FILE__ ).'/template-parts/list-category-padre.php';?>
-   </div>
-</section>
+<?php while(have_posts()): the_post();?>
+        <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
+           <h2 class="center">Titulo Dynamics surgery </h2>
+        </div>
+<?php endwhile;
+          /*while($query->have_posts()):$query->the_post(); */
+         ?>
+
+   <?php get_template_part( 'template-parts/menu', 'interno' );?>
+        
+      <section class="header-productos">
+          <header class="center">
+              <h3>Conoce nuestras lineas</h3>
+              
+              <p>lorem ipsup lorem ipsuplorem ipsup lorem ipsuplorem ipsuplorem ipsuplorem ipsup</p>
+          </header>
+        </section>
+        <section class="container">
+           <div class="row wrapper-card">
+               <?php kervis_query_productos(-1);?>
+           </div>
+        </section>
+  </div>
+
 
 <?php get_footer();?>
