@@ -1,23 +1,16 @@
 <?php get_header();?>
 <?php while(have_posts()): the_post();?>
         <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
-           <h2 class="center">Titulo Dynamics surgery </h2>
+           <h2 class="center"><?php the_field('contenido_cabecera');?></h2>
         </div>
-<?php endwhile;?>
+        
+<?php get_template_part( 'template-parts/menu', 'interno' );?>
 <div class="container">
-        <div class="menu-interno">
-           <a href="#">Inicio</a>
-           <a href="#">Productos</a>
-        </div>
-
-        <h1 class="titulo-nosotros">SOBRE NOSOTROS</h1>
+            <h1 class="titulo-nosotros"><?php the_field('sub_titulo');?></h1>
         
         <section class="parent-quienes-somos">
             <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
+                <?php the_content();?>
             </div>
             <div class="iconos-nosotros">
                 <div class="iconos-nosotros-hijos">
@@ -58,18 +51,16 @@
                 </div>
             </div>
             <div>
-                <img src="<?php echo get_template_directory_uri();?>/img/columna.jpg" alt="">
+                <img src="<?php the_field('imgen_evento');?>" alt="">
             </div>
             <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea deleniti? Rerum temporibus quisquam nesciunt nemo porro unde ad, perspiciatis suscipit numquam consectetur doloremque, ut repellendus quae atque ipsa odio!</p>
+                <?php the_field('contenido_eventos');?>
              
             </div>
 
         </section>
 
 </div>
+<?php endwhile;?>
 
 <?php get_footer()?>

@@ -13,7 +13,7 @@
                     <p>
                         <?php the_content();?>
                     </p>
-                    <a href="#" class="btn ">Descargar Brochure</a>
+                    <a href="<?php the_field('subir_archivo')?>" class="btn">Descargar pdf <?php the_title(); ?></a>
     
                 </div>
                 <div class= "product-destacado-single">
@@ -21,36 +21,19 @@
                 </div>
     </section>
     <h3 class="center">Beneficios y caracteristicas</h3>
+    <?php $beneficios = get_post_meta( get_the_ID(), 'repeat_beneficios', true );?>
     <section class="row">
-        
-            <div class="card card-single">
-                <img src="<?php echo get_template_directory_uri();?>/img/columna.jpg" alt="">
-                <div class="contenido-single">
-                    <h5>ES RESISTENTE Y PUEDE SER SATURADO O CORTADO SIN DESHIDRATARSE</h5>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia, natus provident animi pariatur earum nemo beatae! Eos voluptate magni facilis impedit, neque veniam perferendis voluptatum consequatur blanditiis! Aspernatur, laudantium?</p>
-                
-            </div>
-        </div>
+    <?php foreach($beneficios as $beneficio):?>
         <div class="card card-single">
-                <img src="<?php echo get_template_directory_uri();?>/img/columna.jpg" alt="">
-                <div class="contenido-single">
-                    <h5>ES RESISTENTE Y PUEDE SER SATURADO O CORTADO SIN DESHIDRATARSE</h5>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia, natus provident animi pariatur earum nemo beatae! Eos voluptate magni facilis impedit, neque veniam perferendis voluptatum consequatur blanditiis! Aspernatur, laudantium?</p>
-                
+            <div class="img-product-single">
+                 <img src="<?php echo $beneficio[image];?>" alt="">
+            </div>
+            <div class="contenido-single">
+                <h5><?php echo $beneficio[title];?></h5>
+                <p><?php echo $beneficio[description];?></p>
             </div>
         </div>
-        <div class="card card-single">
-                <img src="<?php echo get_template_directory_uri();?>/img/columna.jpg" alt="">
-                <div class="contenido-single">
-                    <h5>ES RESISTENTE Y PUEDE SER SATURADO O CORTADO SIN DESHIDRATARSE</h5>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia, natus provident animi pariatur earum nemo beatae! Eos voluptate magni facilis impedit, neque veniam perferendis voluptatum consequatur blanditiis! Aspernatur, laudantium?</p>
-                
-            </div>
-        </div>
-    
+    <?php endforeach;?>
     </section>
 </div>
 <?php endwhile;?>

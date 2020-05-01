@@ -2,6 +2,6 @@
         <div class="menu-interno">
            <a href="#">Inicio </a>
            >
-           <a href="#">Productos</a>
+           <a href="#"><?php the_title();?></a>
         </div>
 </div>
