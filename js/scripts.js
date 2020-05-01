@@ -23,3 +23,15 @@ function materialize() {
   var elems = document.querySelectorAll(".sidenav");
   var instances = M.Sidenav.init(elems);
 }
+
+
+// menu pegajoso
+
+var stickymenu = document.querySelector('.menu-principal')
+console.log(stickymenu)
+stickymenuoffset = stickymenu.offsetTop;
+window.addEventListener("scroll", function(t) {
+    requestAnimationFrame(function() {
+        window.pageYOffset > stickymenuoffset ? stickymenu.classList.add("stickymenu") : stickymenu.classList.remove("stickymenu")
+    })
+});
