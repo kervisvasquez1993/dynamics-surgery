@@ -498,7 +498,8 @@ function yourprefix_register_about_page_metabox() {
 
 }
 
-add_action( 'cmb2_admin_init', 'beneficios_caracteristicas', 'quienes_somos_iconos' );
+add_action( 'cmb2_admin_init', '
+_caracteristicas', 'quienes_somos_iconos' );
 /**
  * Hook in and add a metabox to demonstrate repeatable grouped fields
  */

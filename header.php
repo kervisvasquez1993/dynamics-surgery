@@ -36,8 +36,11 @@
 <div>          
 <nav class="menu-principal">
       <div class="content-menu">
-          <div class="menu-grande">
-            <a href="<?php echo esc_url(home_url('/'));?>" class="">Logo</a>
+          <div class="menu-grande nav-wrapper">
+            <a href="<?php echo esc_url(home_url('/'));?>" class="logo">
+            <img src="<?php echo get_template_directory_uri();?>/img/logo.svg" alt="">
+        
+            </a>
           
             <?php
                 $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'menus-dinamico responsive',);
@@ -72,7 +75,9 @@
   </ul>
   
   </div>
-
+  
+                
             
+
 
        

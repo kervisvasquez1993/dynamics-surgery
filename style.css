@@ -12,6 +12,18 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.menu-grande{
+  display: flex;
+}
+.menu-principal{
+  z-index: 0;
+}
+.logo{
+  width: 20%;
+  
+  z-index:1000 !important;
+  
+}
 .stickymenu {
   position: fixed;
   top: 0;

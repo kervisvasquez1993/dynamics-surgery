@@ -45,8 +45,8 @@ function kervis_query_eventos($cantidad = -1)
         'posts_per_page' => $cantidad
 
     );
-    $productos = new WP_Query($args);
-    while( $productos->have_posts()): $productos->the_post(); 
+    $eventos = new WP_Query($args);
+    while( $eventos->have_posts()): $eventos->the_post();
     ?>
          <div class="card-padre">
             <div class="card-header">
@@ -73,4 +73,46 @@ function kervis_query_eventos($cantidad = -1)
             </div>
          </div>
 <?php endwhile;
+}
+
+function eventos_front($cantidad = -1)
+{
+    $args = array(
+        'post_type' => 'eventos',
+        'posts_per_page' => $cantidad
+
+    );
+
+    $eventos_front = new WP_Query($args);
+
+    while( $eventos_front->have_posts()): $eventos_front->the_post();
+        ?>
+        <div class="card-padre">
+            <div class="card-header">
+                <h6> II JORNADA NACIONALES: GINECOLOGIA ONCOLÓGICA</h6>
+                <div class="flex">
+                    <div class="flex">
+                        <p>Fecha:</p> <p>Agosto 2019</p>
+                    </div>
+                    <div class="flex">
+                        <p>Lugar:</p> <p>Hospital kervis vasquez</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <?php the_post_thumbnail( 'mediano', array('class' => 'card-img-top') )?>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo totam praesentium esse, harum cumque quis facere! Maxime necessitatibus quibusdam nesciunt aspernatur voluptas neque ipsum consequuntur, error nostrum quo rem.
+                </p>
+                <button class="btn">Ver Más</button>
+            </div>
+        </div>
+    <?php endwhile;
+
+
+
 }

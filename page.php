@@ -4,7 +4,9 @@
            <h2 class="center"><?php the_field('contenido_cabecera');?></h2>
         </div>
         
-<?php get_template_part( 'template-parts/menu', 'interno' );?>
+<?php get_template_part( 'template-parts/menu', 'interno' );
+        t
+?>
 <div class="container">
             <h1 class="titulo-nosotros"><?php the_field('sub_titulo');?></h1>
         
