@@ -1,5 +1,5 @@
     
-    <footer class="footer">
+<footer class="footer footer-background">
         <div class="footer1">
             <p>logo</p>
             <div class="iconos"> 

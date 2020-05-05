@@ -116,3 +116,30 @@ function eventos_front($cantidad = -1)
 
 
 }
+
+function producto_destacado($cantidad)
+{
+    $args = array( 'post_type' => 'post', 'posts_per_page' => $cantidad);
+    $q = new WP_Query( $args );
+    while( $q->have_posts()): $q->the_post();
+            ?>
+            <div class="wrappers ">
+              
+                <h3 class="center color-titulos"><?php the_title();?></h3>
+                <p>
+                    <?php the_excerpt();?>
+                </p>
+                <a href="<?php the_permalink();?>" class="btn background-boton">LEER MAS</a>
+
+            </div>
+            <div class= "product-destacado">
+                <?php the_post_thumbnail( 'mediano', array('class' => 'card-img-top') );?>
+        
+            </div>
+    <?php
+    endwhile;
+    wp_reset_postdata();
+  
+ 
+}
+

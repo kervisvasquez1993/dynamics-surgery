@@ -62,3 +62,43 @@ function campos_categorias()
 	
 }
 
+add_action( 'cmb2_admin_init', 'front_page' );
+/**
+ * Hook in and add a metabox that only appears on the 'About' page
+ */
+function front_page()
+ {
+	$id_home = get_option('page_on_front');	
+	$front_page = new_cmb2_box( array(
+		'id'           => 'front_page',
+		'title'        => esc_html__( 'Producto destacado', 'cmb2' ),
+		'object_types' => array( 'page' ), // Post type
+		'context'      => 'normal',
+		'priority'     => 'high',
+		'show_names'   => true, // Show field names on the left
+		'show_on'      => array($id_home)		
+	) );
+	$front_page->add_field( array(
+		'name'          => __( 'Titulo del Producto', 'cmb2' ),
+		'desc'          => __( 'Ingrese el Nombre del Producto destacado', 'cmb2'  ),
+		'id'            => 'post',
+		'type'          => 'post_ajax_search',
+		'query_args'	=> array(
+			'post_type'			=> array( 'post' ),
+			'posts_per_page'	=> -1
+		)
+	) );
+	$front_page->add_field( array(
+		'name' => esc_html__( 'Imagen del destacada del producto', 'cmb2' ),
+		'desc' => esc_html__( 'Cargue la imagen del producto o ingrese la url', 'cmb2' ),
+		'id'   => 'img_producto_destacado',
+		'type' => 'file',
+	) );
+	$front_page->add_field( array(
+		'name'     => esc_html__( 'Descripción', 'cmb2' ),
+		'desc'     => esc_html__( 'Ingrese la descripción corta del producto', 'cmb2' ),
+		'id'       => 'descripcion_producto',
+		'type'     => 'textarea',
+		'on_front' => false,
+	) );
+ }

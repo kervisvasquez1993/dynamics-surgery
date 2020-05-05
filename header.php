@@ -34,7 +34,7 @@
                     -->
                     
 <div>          
-<nav class="menu-principal">
+<nav class="menu-principal white">
       <div class="content-menu">
           <div class="menu-grande nav-wrapper">
             <a href="<?php echo esc_url(home_url('/'));?>" class="logo">
