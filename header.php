@@ -38,8 +38,7 @@
       <div class="content-menu">
           <div class="menu-grande nav-wrapper">
             <a href="<?php echo esc_url(home_url('/'));?>" class="logo">
-            <img src="<?php echo get_template_directory_uri();?>/img/logo.svg" alt="">
-        
+                <img src="<?php echo get_template_directory_uri();?>/img/logo.svg" alt="">
             </a>
           
             <?php

@@ -42,33 +42,9 @@
   <section >
        <h3 class="center titulo color-titilo-secundario">Eventos</h3>
        <div class="eventos-front">
-                    
-                <div class="card-dynamics">
-                     <div class="card">
-                       <div class="card-image">
-                         <img src="<?php echo get_template_directory_uri();?>/img/test.jpg">
-                       </div>
-                       <div class="card-content">
-                          <span class="card-title">Card Title</span>
-                           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                       </div>
-                     </div>
-                </div>
-
-               <div class="card-dynamics ">
-                     <div class="card">
-                       <div class="card-image">
-                         <img src="<?php echo get_template_directory_uri();?>/img/test.jpg">
-                       </div>
-                       <div class="card-content">
-                          <span class="card-title">Card Title</span>
-                           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                       </div>
-                     </div>
-               </div>
-                  
+         <?php eventos_front(2);?>                  
         </div> 
-        <h3 class="center titulo"> <a href="#" class="btn background-boton">Ver mas</a></h3>
+        <h3 class="center titulo"> <a href="<?php $e = get_permalink('eventos');?>" class="btn background-boton">Ver masss  <?php echo $e;?></a></h3>
    
   </section>
 

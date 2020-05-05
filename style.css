@@ -30,7 +30,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   background: #e8e8e8;
 }
 .footer-background{
-  background: #084054;
+  background: #084054 !important;
 }
 .background-principal{
   background: #348fb0
@@ -50,9 +50,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .logo{
   width: 20%;
-  
   z-index:1000 !important;
   
+}
+.z-index{
+  z-index: 1000 !important;
+  width: 40px;
+}
+.logo-footer{
+  width: 150px;
 }
 .stickymenu {
   position: fixed;
