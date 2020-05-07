@@ -35,3 +35,18 @@ window.addEventListener("scroll", function(t) {
         window.pageYOffset > stickymenuoffset ? stickymenu.classList.add("stickymenu") : stickymenu.classList.remove("stickymenu")
     })
 });
+
+// carousal
+
+document.addEventListener('DOMContentLoaded', () => {
+  const elementosCarousel = document.querySelectorAll('.carousel')
+  
+  M.Carousel.init(elementosCarousel, {
+      duration: 150,
+      dist: 0,
+      shift: 5,
+      padding: 5,
+      numVisible: 5
+  });
+})
+

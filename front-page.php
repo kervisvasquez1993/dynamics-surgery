@@ -5,7 +5,7 @@
     <?php while(have_posts()): the_post();?>
         <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
            
-                <h2 class="center color-font-header">Titulo Dynamics surgery </h2>
+                <h2 class="center color-font-header"><?php the_field('titulo_cabecera');?></h2>
                 
         </div>
 
@@ -14,7 +14,7 @@
 </header>
 <div class="container">
     <div class="row">
-        <h1 class="center">Este es el titulo de nuestra web</h1>
+        <h4 class="center"><?php the_field('titulo_slogan');?></h4>
     </div>
 </div>
 <?php get_template_part('template-parts/icono','front');?>
@@ -24,7 +24,7 @@
 <section class="section  background-principal texto-important no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laboriosam qui repudiandae cumque tenetur dolor odit fugit. Ratione praesentium ex molestias nesciunt odio. Sunt eius eum architecto voluptatem recusandae error!</h5>
+          <h5 class="header col s12 light color-white"><?php the_content();?></h5>
         </div>
       </div>
 </section>
@@ -37,7 +37,17 @@
 </section>
 
 
-
+<section class="conatiner slider_style">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="center">Lorem, ipsum dolor.</h1>
+                <div class="carousel center-align carousel-slider">
+                    <?php carousel(-1);?>
+                </div>
+            </div>
+        </div>
+    </section>
+   
       
   <section >
        <h3 class="center titulo color-titilo-secundario">Eventos</h3>

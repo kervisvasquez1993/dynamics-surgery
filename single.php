@@ -21,7 +21,7 @@
                 </div>
     </section>
     <h3 class="center">Beneficios y caracteristicas</h3>
-    <?php $beneficios = get_post_meta( get_the_ID(), 'repeat_beneficios', true );?>
+    <?php $beneficios = get_post_meta( get_the_ID(), 'blog_group', true );?>
     <section class="row">
     <?php foreach($beneficios as $beneficio):?>
         <div class="card card-single">

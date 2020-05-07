@@ -102,3 +102,9 @@ function init_remove_support(){
     $post_type = 'productos';
     remove_post_type_support( $post_type, 'editor');
 }
+
+function bp_mime_type ( $mime_types ) {
+    $mime_types['svg'] = 'image/svg+xml';
+    return $mime_types;}
+   
+   add_filter('upload_mimes', 'bp_mime_type', 1, 1);

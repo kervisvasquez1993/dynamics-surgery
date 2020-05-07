@@ -62,10 +62,10 @@ function campos_categorias()
 	
 }
 
-add_action( 'cmb2_admin_init', 'front_page' );
-/**
- * Hook in and add a metabox that only appears on the 'About' page
- */
+//add_action( 'cmb2_admin_init', 'front_page' );
+
+ /* Hook in and add a metabox that only appears on the 'About' page
+ *//*
 function front_page()
  {
 	$id_home = get_option('page_on_front');	
@@ -101,4 +101,97 @@ function front_page()
 		'type'     => 'textarea',
 		'on_front' => false,
 	) );
- }
+ }*/
+
+ 
+add_action( 'cmb2_admin_init', 'crd_repeater_metaboxes' );
+/**
+ * Define the metabox and field configurations.
+ */
+function crd_repeater_metaboxes()
+{
+	/**
+	 * Initiate the metabox
+	 */
+	$cmb = new_cmb2_box( array(
+		'id'            => 'beneficios y Caracteristicas',  // Belgrove Bouncing Castles
+		'title'         => 'Beneficios y Caracteristicas',
+		'object_types'  => array( 'post', ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+	) );
+
+	$blog_group_id = $cmb->add_field( array(
+		'id'          => 'blog_group',
+		'type'        => 'group',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => 'beneficios y caracteristicas',
+			'add_button'    => 'Add Another Post',
+			'remove_button' => 'Remove Post',
+			'closed'        => true,  // Repeater fields closed by default - neat & compact.
+			'sortable'      => true,  // Allow changing the order of repeated groups.
+		),
+	) );
+	
+	$cmb->add_group_field( $blog_group_id, array(
+		'name'       => esc_html__( 'Titulo', 'cmb2' ),
+		'id'         => 'title',
+		'type'       => 'text',
+	) );
+	$cmb->add_group_field( $blog_group_id, array(
+		'name' => esc_html__( 'Imagen o icono', 'cmb2' ),
+		'id'   => 'image',
+		'type' => 'file',
+	) );
+	$cmb->add_group_field( $blog_group_id, array(
+		'name'        => esc_html__( 'Descripción', 'cmb2' ),
+		'description' => esc_html__( 'Escriba una descripción', 'cmb2' ),
+		'id'          => 'description',
+		'type'        => 'textarea_small',
+	) );
+
+	/**
+	 * seccion de iconos 
+	 */
+	$id_home = get_option('page_on_front');
+	$iconos = new_cmb2_box( array(
+		'id'            => 'iconos',  // Belgrove Bouncing Castles
+		'title'         => 'iconos',
+		'object_types'  => array( 'page', ), // Post type
+		'show_on'       => array('id' => array( $id_home, 9)), 
+		
+	) );
+
+	$iconos_group = $iconos->add_field( array(
+		'id'          => 'blog_group',
+		'type'        => 'group',
+		'repeatable'  => true,
+		'options'     => array(
+			'group_title'   => 'iconos',
+			'add_button'    => 'Add Another Post',
+			'remove_button' => 'Remove Post',
+			'closed'        => true,  // Repeater fields closed by default - neat & compact.
+			'sortable'      => true,  // Allow changing the order of repeated groups.
+		),
+	) );
+	
+	$iconos->add_group_field( $iconos_group, array(
+		'name'       => esc_html__( 'Titulo', 'cmb2' ),
+		'id'         => 'title',
+		'type'       => 'text',
+	) );
+	$iconos->add_group_field( $iconos_group, array(
+		'name' => esc_html__( 'Imagen', 'cmb2' ),
+		'id'   => 'image',
+		'type' => 'file',
+	) );
+	$iconos->add_group_field( $iconos_group, array(
+		'name'        => esc_html__( 'Descripción', 'cmb2' ),
+		'description' => esc_html__( 'Escriba una descripción', 'cmb2' ),
+		'id'          => 'description',
+		'type'        => 'textarea_small',
+	) );
+}
+

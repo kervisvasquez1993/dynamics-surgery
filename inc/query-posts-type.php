@@ -129,3 +129,38 @@ function producto_destacado($cantidad)
  
 }
 
+
+
+function carousel($cantidad){
+    $args= array(
+        'post_type' => 'productos',
+        'posts_per_page' => $cantidad
+    );
+    $carousel = new WP_Query( $args );
+    while( $carousel->have_posts()): $carousel->the_post();
+    $link = get_field('link');
+    $avatar = get_field('img_category', 'category_'. $link .''); 
+    $small_description = get_field('small_description', 'category_'. $link .''); 
+    ?>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="card-image">
+              <img src="<?php echo $avatar;?>">
+            </div>
+            <div class="card-content">
+            <span class="card-title"><?php the_title();?></span>
+              <p><?php echo $small_description;?></p>
+            </div>
+            
+          </div>
+        </div>
+    <?php
+    endwhile;
+    wp_reset_postdata();
+  
+
+}
+?>
+
+
+      
