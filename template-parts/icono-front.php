@@ -16,7 +16,7 @@
            <div class="icon-block">
              <img class="icono-imagen" src="<?php echo $icono[image]?>">
              <h5 class="center color-titulos"><?php echo $icono[title]?></h5>
-             <p class="light"><?php echo $icono[description] ?></p>
+             <p class="light center"><?php echo $icono[description] ?></p>
            </div>
          </div>
          <?php endforeach;?>

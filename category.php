@@ -12,12 +12,12 @@
 <?php echo get_term_meta( get_the_ID(), 'yourprefix_term_avatar',true )?>
 <section class="container">
    <div class="flex-category">
-       <div class="sister1">
+       <div class="category_list">
           <?php require_once dirname( __FILE__ ).'/template-parts/list-category.php';?>
        </div>
-        <div class="sister2">
+        <div class="category_content">
                 <h4><?php echo get_cat_name($cat2);?></h4>
-                <div class="img-category blue">
+                <div class="img-category">
                     <?php   //$avatar = get_term_meta( get_queried_object_id(), 'img_category', true );
                            $avatar = get_field('img_category', 'category_'. $cat .''); 
                     ?>

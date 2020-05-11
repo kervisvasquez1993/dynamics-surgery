@@ -51,6 +51,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .icono-imagen{
   width: 20%;
 }
+.content-adicional-nosotros{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.description{
+  padding: 0 40px;
+}
+.description-icon{
+  padding:0 30px ;
+}
+.btn-leer-mas{
+  width: 50%;
+}
+img.iconos-nosotros{
+  width: 50px ;
+  height: 50px ;
+  
+}
 .test-siguiente,
 .test-anterior{
   width: 30px;
@@ -277,7 +297,7 @@ img {
 }
 .img-category{
   width: 100%;
-  height: 40vh;
+  
 }
 
 .menu-interno{
@@ -300,8 +320,20 @@ img {
 }
 .producto-select p{
   font-size: 16px;
-  padding-left: 30px;
+  padding-left: 45px;
   
+}
+.category_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.category_list p{
+  width: 30%;
+  
+}
+.category_content h4{
+  padding: 0 45px;
 }
 @media (min-width: 414px) {
   .menu-principal {
@@ -327,6 +359,23 @@ img {
   }
   .flex-category{
     display: flex ;
+    justify-content: space-between;
+    
+  }
+  .category_list{
+    width: 25% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .category_list p {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .category_content{
+    width: 70%;
   }
   .back-test{
     background: rebeccapurple !important;
@@ -422,6 +471,7 @@ img {
   }
 }
 @media (min-width: 993px) {
+  
    .carousel-item{
      width: 15vw;
    }
@@ -432,12 +482,12 @@ img {
     width: 60% !important;
   }
 .sister1{
-  background: green;
+ 
   width: 10vw;
 }
 .sister2{
   width: 100vw;
-  background: hotpink;
+ 
 }
   .menu-interno{
     width: 10vw;
