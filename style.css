@@ -348,6 +348,15 @@ img {
 }
 
 @media (min-width: 768px) {
+  .single-eventos{
+    display: flex;
+  }
+  .content-single{
+    width: 70%;
+  }
+  .sidebar_single{
+    width: 30%;
+  }
   .carousel-item{
     width: 20vw !important;
 }

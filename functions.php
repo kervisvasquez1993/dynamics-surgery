@@ -9,6 +9,7 @@ require_once ( get_template_directory() . '/CMB2/cmb2.php' );
 require_once dirname( __FILE__ ).'/inc/custom-field.php';
 require_once dirname( __FILE__ ).'/inc/query-posts-type.php';
 require_once dirname( __FILE__ ).'/inc/field-category.php';
+require_once dirname( __FILE__ ).'/inc/relation.php';
 
 
 // Cargar los estilos y los script de la pagina

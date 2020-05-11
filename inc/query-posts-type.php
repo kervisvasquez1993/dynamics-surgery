@@ -51,13 +51,13 @@ function kervis_query_eventos($cantidad = -1)
 
          <div class="card-padre">
             <div class="card-header">
-                <h6> II JORNADA NACIONALES: GINECOLOGIA ONCOLÓGICA</h6>
+                <h6><?php the_title();?></h6>
                 <div class="flex">
                     <div class="flex">
-                        <p>Fecha:</p> <p>Agosto 2019</p>
+                        <p>Fecha:</p> <p><?php the_field('fecha');?></p>
                     </div>
                     <div class="flex">
-                        <p>Lugar:</p> <p>Hospital kervis vasquez</p>
+                        <p>Lugar:</p> <p><?php the_field('lugar');?></p>
                     </div>
                 </div>
             </div>
@@ -68,9 +68,9 @@ function kervis_query_eventos($cantidad = -1)
             </div>
             <div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo totam praesentium esse, harum cumque quis facere! Maxime necessitatibus quibusdam nesciunt aspernatur voluptas neque ipsum consequuntur, error nostrum quo rem.
+                    <?php the_excerpt();?>
                 </p>
-                <button class="btn">Ver Más</button>
+                <a href="<?php the_permalink();?>" class="btn">Ver Más</a>
             </div>
          </div>
 <?php endwhile;
