@@ -52,15 +52,24 @@ function style(){
     // agregando soporte a widget
     add_action( 'widgets_init', 'widgets_sidebar' );
 function widgets_sidebar(){
-    register_sidebar(array(
+    register_sidebar(
+        array(
         'name' => 'widgets Lateral',
         'id' => 'sidebar_widget',
-        'before_widget' => '<div class"widget">',
+        'before_widget' => '<div class="widget">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="text-center text-ligth separador inverso">',
-        'after_title' => '</h2>'
-
-    ));
+        'before_title' => '<h4 class="text-center text-ligth separador inverso">',
+        'after_title' => '</h4>'
+             ));
+    register_sidebar(
+        array('name' => 'post relations',
+        'id' => 'post_relations',
+        'before_widget' => '<div class"post_relation">',
+        'after_widget' => '</div>',
+        'before_title' => '<h5 class="text-ligth">',
+        'after_title' => '</h5>'
+             ));
+                     
 }
 
 // limitar el contenido de las palabras 

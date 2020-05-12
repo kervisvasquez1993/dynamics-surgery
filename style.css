@@ -42,6 +42,33 @@ Use it to make something cool, have fun, and share what you've learned with othe
   background: #036588
 }
 /* fin fron page */
+/*single-evento*/
+div.related-gallery{
+  display: flex;
+  flex-direction: column;
+}
+#rpbt-related-gallery-1 .gallery-item{
+  width: 100% !important;
+}
+/*
+fin de single evento
+*/
+/*buscar*/
+.widget form{
+  display: flex;
+  position: relative;
+}
+.widget form .search-form{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  background: #a61206 !important;
+ 
+
+}
+
 .icon-block{
   display: flex;
   flex-direction: column;
@@ -335,6 +362,18 @@ img {
 .category_content h4{
   padding: 0 45px;
 }
+.background-sidebar{
+  background: #f9f9f9;
+}
+.widget{
+  padding: 20px;
+}
+.widget > * {
+  color: #000000;
+}
+ .cat-item a{
+ color: #a2a2a2 !important;
+}
 @media (min-width: 414px) {
   .menu-principal {
     justify-content: space-around;
@@ -348,14 +387,23 @@ img {
 }
 
 @media (min-width: 768px) {
+  /*single-evento*/
+  div.related-gallery{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #rpbt-related-gallery-1 .gallery-item{
+    width: 45% !important;
+  }
   .single-eventos{
     display: flex;
+    justify-content: space-between;
   }
   .content-single{
     width: 70%;
   }
   .sidebar_single{
-    width: 30%;
+    width: 25%;
   }
   .carousel-item{
     width: 20vw !important;
@@ -623,4 +671,97 @@ img {
     
     
   }
+}
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+	
+/*CSS Artículos relacionados*/
+.rel_posts > h3:nth-child(1){font-weight:bold;}
+.rel_posts {
+  border-top: 1px dotted gray;
+  padding-top: 20px;
+}
+.rel_posts:after {
+  content: "";
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  clear: both;
+}
+.rel_posts ul {
+  width: 100%;
+}
+.rel_posts ul li {
+  list-style: none;
+  width: 20%;
+  float: left;
+  margin-left: 20px;
+}
+.rel_posts ul li .title_rel {
+  display: block;
+  padding: 4px;
+ text-decoration:none;
+}
+ 
+.img_post_relac > img {width:120px !important;
+height: 100px;}
+ 
+.img_post_relac > img:hover {border: 1px solid green;border-radius:5%;}
+ 
+@media only screen and (max-width: 600px) {
+  .rel_posts ul li {
+    width: 40%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+ .img_post_relac > img {width: 80px !important;
+height: 60px;}
+  .rel_posts ul li:nth-child(odd) {
+    clear: both;
+  }
+ .rel_posts > h3:nth-child(1){text-align:center;}
 }

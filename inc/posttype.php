@@ -32,7 +32,7 @@ function productos() {
         'hierarchical'       => false,
         'menu_position'      => 6,
         'supports'           => array( 'title', 'editor', 'thumbnail' ),
-        'taxonomies'          => array( 'category' ),
+        'taxonomies'          => array( 'category','tags' ),
     );
 
     register_post_type( 'productos', $args );
@@ -69,10 +69,10 @@ function eventos() {
         'rewrite'            => array( 'slug' => 'eventos' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
-        'hierarchical'       => false,
+        'hierarchical'       => true,
         'menu_position'      => 6,
-        'supports'           => array( 'title', 'editor', 'thumbnail' ),
-        'taxonomies'          => array( 'category' ),
+        'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' , 'genesis-cpt-archives-settings', 'genesis-seo', 'genesis-scripts', 'genesis-layouts', 'genesis-rel-author', ),
+        'taxonomies'          => array( 'post_tag' ),
     );
 
     register_post_type( 'eventos', $args );

@@ -1,4 +1,4 @@
-<aside class="col s12 m4 red">
+<aside class="col background-sidebar">
     <?php 
         if(!is_active_sidebar( 'sidebar_widget' )){
             return;
