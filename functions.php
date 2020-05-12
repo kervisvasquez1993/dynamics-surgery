@@ -118,3 +118,37 @@ function bp_mime_type ( $mime_types ) {
     return $mime_types;}
    
    add_filter('upload_mimes', 'bp_mime_type', 1, 1);
+
+//Renombrar el nombre de menú post o entradas por Noticias
+function modificar_post_label() 
+{
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Productos';
+    $submenu['edit.php'][5][0] = 'Productos';
+    $submenu['edit.php'][10][0] = 'A&ntilde;adir Producto';
+
+    echo '';
+}
+
+//modificar el nombre de las entradas
+function modificar_post_object() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Productos';
+    $labels->singular_name = 'Productos';
+    $labels->add_new = 'A&ntilde;adir Nueva';
+    $labels->add_new_item = 'A&ntilde;adir Nuevo Producto';
+    $labels->edit_item = 'Editar Producto';
+    $labels->new_item = 'Nueva Producto';
+    $labels->view_item = 'Ver Productos';
+    $labels->search_items = 'Buscar Productos';
+    $labels->not_found = 'No se han encontrado Producto';
+    $labels->not_found_in_trash = 'No se han encontrado Producto en la papelera';
+    $labels->all_items = 'Todas los Productos';
+    $labels->menu_name = 'Productos';
+    $labels->name_admin_bar = 'Productos';
+}
+
+add_action( 'admin_menu', 'modificar_post_label' );
+add_action( 'init', 'modificar_post_object' );

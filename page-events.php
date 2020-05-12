@@ -17,8 +17,12 @@
     <div class="row">
 
        <section class=" col s12 m8 ">
-        
          <?php kervis_query_eventos(-1);?>
+         <div class="text-center">
+            <div class="navigation">
+                <?php if(function_exists('pagenavi')) { pagenavi(); } ?>
+            </div>
+       </div>
        </section>
     <?php get_sidebar();?>
 </div>

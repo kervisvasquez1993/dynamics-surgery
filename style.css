@@ -57,13 +57,18 @@ fin de single evento
 .widget form{
   display: flex;
   position: relative;
+  justify-content: space-between;
+}
+.widget form input{
+  width: 100% !important;
+ 
 }
 .widget form .search-form{
   position: absolute;
   top: 0;
   right: 0;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background: #a61206 !important;
  
 
@@ -672,52 +677,6 @@ img {
     
   }
 }
-
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
 	
 /*CSS Artículos relacionados*/
 .rel_posts > h3:nth-child(1){font-weight:bold;}

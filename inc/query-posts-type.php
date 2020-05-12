@@ -74,6 +74,7 @@ function kervis_query_eventos($cantidad = -1)
             </div>
          </div>
 <?php endwhile;
+
 }
 
 function eventos_front($cantidad = -1)

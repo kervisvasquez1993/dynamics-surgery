@@ -52,9 +52,12 @@
   <section >
        <h3 class="center titulo color-titilo-secundario">Eventos</h3>
        <div class="eventos-front">
-         <?php eventos_front(2);?>                  
+         <?php eventos_front(2);
+         $evento = get_page_by_title('Eventos');
+
+         ?>                  
         </div> 
-        <h3 class="center titulo"> <a href="<?php $e = get_permalink('eventos');?>" class="btn background-boton">Ver masss  <?php echo $e;?></a></h3>
+        <h3 class="center titulo"> <a href="<?php the_permalink($evento->ID);?>" class="btn background-boton">Ver masss </a></h3>
    
   </section>
 
