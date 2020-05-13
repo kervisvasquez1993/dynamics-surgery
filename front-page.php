@@ -36,7 +36,10 @@
         
 </section>
 <section class="grey paddin-vertical">
-    <h4 class="center">Nuestros Productos</h4>
+       <div class="titulo-wrapper color-titilo-secundario">
+           <h3>Nuetros Productos</h3>
+           <div class="titulo-border"></div>
+       </div>
     <div class="container">
         <hr>
        <div class="conatiner-slider">
@@ -54,7 +57,10 @@
 </section>
 
   <section >
-       <h3 class="center titulo color-titilo-secundario">Eventos</h3>
+       <div class="titulo-wrapper color-titilo-secundario">
+           <h3>Eventos</h3>
+           <div class="titulo-border"></div>
+       </div>
        <div class="eventos-front">
          <?php eventos_front(2);
          $evento = get_page_by_title('Eventos');

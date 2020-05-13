@@ -8,31 +8,31 @@
         <div class="row contactanos-header">
             <div class="w-50">
                
-                <h5>Email-Telefono-redes sociales</h5>
+                <h5 class="color-principal"><?php the_field('titulo_informacion_contacto');?></h5>
                 <div class="iconos-internos-wrapper">
                     <div class="align-icon">
-                         <i class="material-icons p-0-5 color-principal">mail</i> <span class="nombres-contact">info@gmail.com</span>
+                         <i class="material-icons p-0-5 color-principal">mail</i> <span class=" color-secundario nombres-contact"><?php the_field('correo');?></span>
                     </div>
                     <div class="align-icon">
-                         <i class="material-icons p-0-5 color-principal">call</i> <span class="nombres-contact">+584244444161</span>
+                         <i class="material-icons p-0-5 color-principal">call</i> <span class="color-secundario nombres-contact"><?php the_field('numero');?></span>
                     </div>
                     <div class="align-icon">
-                         <i class="material-icons p-0-5 color-principal">search</i> <span class="nombres-contact">@dynamicssurgery</span>
+                         <i class="material-icons p-0-5 color-principal">search</i> <span class="color-secundario nombres-contact"><?php the_field('redes_sociales');?></span>
                     </div>
                 </div>
               
             </div>
             <div class="w-50  b-r">
-                 <h5 class="p-0-50 ">Dirección</h5>
+                 <h5 class="p-0-50 color-principal"><?php the_field('titulo_direccion');?></h5>
                  <div class="contact-iconos">
                     <i class="material-icons p-0-5 color-principal">place</i>
-                    <p>Lorem ipsum, dolor sit ametoluptates reiciendis exercitationem dolores culpa, dignissimos laudantium voluptatum! Id, velit.</p>
+                    <p class="color-secundario"><?php the_field('descripcion_direccion');?></p>
                  </div> 
             </div>
         </div>
         <div class="row comunicate">
-            <h3>COMUNÍCATE CON NOSOTROS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quaerat modi saepe ipsum sed vitae quibusdam, unde voluptatum dolore veritatis, repudiandae provident ab. Placeat amet libero, et molestiae incidunt consectetur?</p>
+            <h3 class="color-principal"><?php the_field('eslogan_titulo');?></h3>
+            <p class="color-secundario"><?php the_field('eslogan_descripcion');?></p>
         </div>
         <form class="row  formulario">
             <div class="col s12 ">
@@ -59,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <input type="submit" class="btn btn-form">
+            <input type="submit" class="btn btn-form background-boton">
         </form>
         
 </div>
