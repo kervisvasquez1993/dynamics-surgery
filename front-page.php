@@ -35,29 +35,24 @@
         </div>
         
 </section>
-
-<div class="conatiner-slider">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-       <?php carousel(-1); ?>
+<section class="grey paddin-vertical">
+    <h4 class="center">Nuestros Productos</h4>
+    <div class="container">
+        <hr>
+       <div class="conatiner-slider">
+         <div class="swiper-container">
+           <div class="swiper-wrapper">
+              <?php carousel(-1); ?>
+           </div>
+           <!-- Add Pagination -->
+           <div class="swiper-pagination"></div>
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+         </div>
+       </div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-</div>
+</section>
 
-<!--
-<section class="conatiner slider_style">
-        <div class="row">
-            <div class="col s12">
-                <h1 class="center">Lorem, ipsum dolor.</h1>
-                <div class="carousel center-align carousel-slider">
-                    <?php carousel(-1);?>
-                </div>
-            </div>
-        </div>
-    </section>
--->  
   <section >
        <h3 class="center titulo color-titilo-secundario">Eventos</h3>
        <div class="eventos-front">

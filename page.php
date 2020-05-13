@@ -29,12 +29,15 @@
                     ?>
             </div>
             <div>
-                <img src="<?php the_field('imgen_evento');?>" alt="">
+                <img src="<?php the_field('imgen_evento');
+                    $evento = get_page_by_title('Eventos');
+                ?>" alt="">
             </div>
             <div class="content-adicional-nosotros">
                 
+                
                 <?php the_field('contenido_eventos');?>
-                <a href="" class="btn btn-leer-mas">LEER MAS SOBRE </a>
+                <a href="<?php the_permalink($evento->ID);?>" class="btn btn-leer-mas">LEER MÁS SOBRE NUESTROS EVENTOS </a>
              
             </div>
 

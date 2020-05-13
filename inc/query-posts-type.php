@@ -149,7 +149,11 @@ function carousel($cantidad){
                <img src="<?php echo $avatar;?>">
             </div>
            <div>
-               <h5><?php the_title();?></h5>
+               <h5>
+                <a href="<?php the_permalink();?>">
+                    <?php the_title();?>
+                </a>
+                </h5>
            </div>
            <p><?php echo $small_description;?></p>
         </div>

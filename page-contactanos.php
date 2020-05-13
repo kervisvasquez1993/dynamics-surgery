@@ -11,13 +11,13 @@
                 <h5>Email-Telefono-redes sociales</h5>
                 <div class="iconos-internos-wrapper">
                     <div class="align-icon">
-                         <i class="material-icons p-0-5">mail</i> <span class="nombres-contact">info@gmail.com</span>
+                         <i class="material-icons p-0-5 color-principal">mail</i> <span class="nombres-contact">info@gmail.com</span>
                     </div>
                     <div class="align-icon">
-                         <i class="material-icons p-0-5">call</i> <span class="nombres-contact">+584244444161</span>
+                         <i class="material-icons p-0-5 color-principal">call</i> <span class="nombres-contact">+584244444161</span>
                     </div>
                     <div class="align-icon">
-                         <i class="material-icons p-0-5">search</i> <span class="nombres-contact">@dynamicssurgery</span>
+                         <i class="material-icons p-0-5 color-principal">search</i> <span class="nombres-contact">@dynamicssurgery</span>
                     </div>
                 </div>
               
@@ -25,7 +25,7 @@
             <div class="w-50  b-r">
                  <h5 class="p-0-50 ">Dirección</h5>
                  <div class="contact-iconos">
-                    <i class="material-icons p-0-5">place</i>
+                    <i class="material-icons p-0-5 color-principal">place</i>
                     <p>Lorem ipsum, dolor sit ametoluptates reiciendis exercitationem dolores culpa, dignissimos laudantium voluptatum! Id, velit.</p>
                  </div> 
             </div>
@@ -34,7 +34,7 @@
             <h3>COMUNÍCATE CON NOSOTROS</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quaerat modi saepe ipsum sed vitae quibusdam, unde voluptatum dolore veritatis, repudiandae provident ab. Placeat amet libero, et molestiae incidunt consectetur?</p>
         </div>
-        <form class="row blue formulario">
+        <form class="row  formulario">
             <div class="col s12 ">
               <div class="row">
                 <div class="input-field col s12 m4">
