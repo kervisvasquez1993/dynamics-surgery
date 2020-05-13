@@ -36,7 +36,17 @@
         
 </section>
 
+<div class="conatiner-slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+       <?php carousel(-1); ?>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
 
+<!--
 <section class="conatiner slider_style">
         <div class="row">
             <div class="col s12">
@@ -47,8 +57,7 @@
             </div>
         </div>
     </section>
-   
-      
+-->  
   <section >
        <h3 class="center titulo color-titilo-secundario">Eventos</h3>
        <div class="eventos-front">
