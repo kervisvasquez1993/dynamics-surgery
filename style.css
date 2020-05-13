@@ -17,6 +17,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border-bottom: 4px solid #388faf !important;
   width: 5%;
 }
+.btn-grueso{
+  width: 20vw;
+}
 .titulo-wrapper{
   display: flex;
   flex-direction: column;
@@ -25,7 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding: 20px;
 }
 .paddin-vertical{
-  padding: 60px 0px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

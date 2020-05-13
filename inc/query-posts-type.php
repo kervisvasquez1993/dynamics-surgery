@@ -93,8 +93,15 @@ function eventos_front($cantidad = -1)
                          <?php the_post_thumbnail( 'mediano', array('class' => 'card-img-top') );?>
                        </div>
                        <div class="card-content">
-                          <span class="card-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></span>
-                           <p><?php the_excerpt();?></p>
+                          <span class="card-title">
+                              <a href="<?php the_permalink();?>"><?php the_title();?></a>
+                            </span>
+                          <div class="flex">
+                             <p><?php the_field('fecha');?></p>
+                          </div>
+                          <div class="leer_mas">
+                             <a href="<?php the_permalink();?>">Leer Más</a>
+                          </div>
                        </div>
                      </div>
                 </div>

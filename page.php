@@ -44,12 +44,5 @@
         </section>
 
 </div>
-<?php 
-    $enlaces = get_permalink( 11,true);
-    echo($enlaces);
-    ?>
-    <a href="<?php $enlaces?>"> hola</a>
-
 <?php endwhile;?>
-
 <?php get_footer()?>
