@@ -75,10 +75,9 @@ function widgets_sidebar(){
 }
 
 // limitar el contenido de las palabras 
-
     //Limitar con la funcion get_the_excerpt
     function excerpt($limit) {
-        $excerpt = explode(' ', category_description($a), $limit);
+        $excerpt = explode(' ', get_the_excerpt(), $limit);
         if (count($excerpt)>=$limit) {
         array_pop($excerpt);
         $excerpt = implode(" ",$excerpt).'...';
@@ -103,6 +102,19 @@ function widgets_sidebar(){
         return $content;
       }
 
+
+
+      function get_excerpt(){
+        $excerpt = get_the_content();
+        $excerpt = preg_replace(" ([.*?])",'',$excerpt);
+        $excerpt = strip_shortcodes($excerpt);
+        $excerpt = strip_tags($excerpt);
+        $excerpt = substr($excerpt, 0, 100);
+        $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+        $excerpt = trim(preg_replace( '/s+/', ' ', $excerpt));
+        $excerpt = $excerpt.'... <a href="'.$permalink.'">Leer más</a>';
+        return $excerpt;
+      }
       // agregar campo a la seccion de categoria 
       
       add_action ( 'edit_category_form_fields', 'extra_category_fields');

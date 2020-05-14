@@ -66,11 +66,11 @@ var swiper = new Swiper('.swiper-container', {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
+    992: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    1024: {
+    1400: {
       slidesPerView: 4,
       spaceBetween: 30,
     },

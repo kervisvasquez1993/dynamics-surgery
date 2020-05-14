@@ -1,7 +1,7 @@
 <?php get_header();?>
 <?php while(have_posts()): the_post();?>
         <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
-           <h2 class="center"><?php the_field('contenido_cabecera');?></h2>
+        <h2 class="center color-font-header texto-center"><?php the_field('titulo_cabecera');?></h2>
         </div>
         
 <?php get_template_part( 'template-parts/menu', 'interno' );

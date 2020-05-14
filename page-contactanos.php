@@ -1,7 +1,7 @@
 <?php get_header();?>
 <?php while(have_posts()): the_post();?>
         <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
-           <h2 class="center">Titulo Dynamics surgery </h2>
+        <h2 class="center color-font-header texto-center"><?php the_field('titulo_cabecera');?></h2>
         </div>
 <?php endwhile;?>
 <div class="container">
@@ -9,7 +9,7 @@
             <div class="w-50">
                
                 <h5 class="color-principal"><?php the_field('titulo_informacion_contacto');?></h5>
-                <div class="iconos-internos-wrapper">
+                <div class="iconos-internos-wrapper ">
                     <div class="align-icon">
                          <i class="material-icons p-0-5 color-principal">mail</i> <span class=" color-secundario nombres-contact"><?php the_field('correo');?></span>
                     </div>
@@ -22,9 +22,10 @@
                 </div>
               
             </div>
-            <div class="w-50  b-r">
+            <div class="b-r"></div>
+            <div class="w-50">
                  <h5 class="p-0-50 color-principal"><?php the_field('titulo_direccion');?></h5>
-                 <div class="contact-iconos">
+                 <div class="contact-iconos ">
                     <i class="material-icons p-0-5 color-principal">place</i>
                     <p class="color-secundario"><?php the_field('descripcion_direccion');?></p>
                  </div> 

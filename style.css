@@ -12,7 +12,13 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.black-color{
+  color: #000000 !important;
+}
 
+.texto-center{
+  width: 80vw;
+}
 .titulo-border{
   border-bottom: 4px solid #388faf !important;
   width: 5%;
@@ -43,8 +49,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 }
 .card-personalizado .img-responsive {
-  height: 50% !important;
-  background: red;
+  min-height: 60% !important;
+  
 }
 .img-responsive img {
   width: 100%;
@@ -310,10 +316,13 @@ img{
   background-position: center center !important;
 }
 .texto-important {
-  min-height: 20vh;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.producto-destacado-front{
+  min-height: 50vh;
 }
 img {
   width: 100%;
@@ -353,15 +362,18 @@ img {
   display: flex;
   flex-direction: column;
   padding: 0 20px !important;
+  margin-top:20px ;
 }
 .b-r {
-  border-top: 2px solid red;
+  border-top: 2px solid  #348fb0 ;
 }
 .w-50 {
   padding: 25px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  height: auto;
+  
 }
 .align-icon {
   display: flex;
@@ -460,6 +472,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .texto-center{
+    width: 50vw;
+  }
   /*single-evento*/
   div.related-gallery{
     flex-direction: row;
@@ -544,7 +559,7 @@ img {
   .contact-iconos {
     display: flex;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 20px;
     justify-content: space-between;
   }
   .contactanos-header {
@@ -559,8 +574,18 @@ img {
   }
   .b-r {
     border-top: 0;
-    border-left: 2px solid #348fb0 !important;
+    border-left: 3px solid #348fb0 !important;
     padding: 0 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+    
+
+  }
+  .flex-start{
+    display: flex;
+    background: red;
+    align-items: center !important;
   }
   .wrappers {
     width: 60vw;

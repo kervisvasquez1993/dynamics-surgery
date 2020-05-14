@@ -56,7 +56,7 @@
           </div>
      </div>
      <a href="#" data-target="slide-out" class="sidenav-trigger mostrar">
-         <i class="material-icons">menu</i>
+         <i class="material-icons black-color">menu</i>
      </a>
 </nav>
 

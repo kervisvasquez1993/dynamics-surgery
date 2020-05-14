@@ -2,13 +2,24 @@
  get_header() ;
  $category = get_category( get_query_var( 'cat' ) );
 ?>
- 
-<div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
+
+<div class="img-hero" style="background:url('<?php the_field('imagen_cabecera_producto');?>');">
    <h2 class="center">Titulo Dynamics surgery </h2>
 </div>
-<?php get_template_part( 'template-parts/menu', 'interno' );
+<div class="container">
+        <div class="menu-interno">
+           <a href="<?php echo esc_url(home_url('/'));?>">Inicio </a>
+           >
+           <?php  $producto = get_page_by_title('Productos');
+            $enlace_producto = $producto->ID;
+           ?>
+           <a href="<?php the_permalink($enlace_producto);?>">
+              Productos
+            </a>
+        </div>
+</div>
    
-?>
+
 <?php echo get_term_meta( get_the_ID(), 'yourprefix_term_avatar',true )?>
 <section class="container">
    <div class="flex-category">

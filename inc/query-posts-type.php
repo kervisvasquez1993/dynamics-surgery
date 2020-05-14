@@ -119,9 +119,9 @@ function producto_destacado($cantidad)
             ?>
             <div class="wrappers ">
               
-                <h3 class="center color-titulos"><?php the_title();?></h3>
+                <h3 class="color-titulos"><?php the_title();?></h3>
                 <p>
-                    <?php the_excerpt();?>
+                    <?php echo excerpt(70);?>
                 </p>
                 <a href="<?php the_permalink();?>" class="btn background-boton">LEER MAS</a>
 
