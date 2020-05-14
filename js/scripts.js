@@ -38,17 +38,6 @@ window.addEventListener("scroll", function(t) {
 
 // carousal
 
-document.addEventListener('DOMContentLoaded', () => {
-  const elementosCarousel = document.querySelectorAll('.carousel')
-  
-  M.Carousel.init(elementosCarousel, {
-      duration: 150,
-      dist: 0,
-      shift: 5,
-      padding: 5,
-      numVisible: 5
-  });
-})
 
 
 // slider
@@ -75,6 +64,14 @@ var swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
     },
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+ 
+});
+
+var swiper = new Swiper('.kervis-slider', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

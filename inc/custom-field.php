@@ -152,6 +152,17 @@ function crd_repeater_metaboxes()
 		'type'        => 'textarea_small',
 	) );
 
+	$cmb->add_field( array(
+		'name'         => esc_html__( 'imagenes multiples', 'cmb2' ),
+		'desc'         => esc_html__( 'Subir imagenes del producto', 'cmb2' ),
+		'id'           => 'uploader_imagen',
+		'type'         => 'file_list',
+		'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
+	) );
+
+
+	
+
 	/**
 	 * seccion de iconos 
 	 */

@@ -12,6 +12,7 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 .black-color{
   color: #000000 !important;
 }
@@ -335,7 +336,7 @@ img {
 .h-40 {
   min-height: 40vh;
 }
-.product-destacado-single img,
+.product-destacado-single .swiper-wrapper .swiper-slide img,
 .product-destacado img {
   width: 100%;
 }
@@ -550,7 +551,7 @@ img {
     width: 100%;
   }
   .wrappers-single {
-    width: 55%;
+    width: 60vw;
   }
   .card-padre {
     width: 80%;
@@ -627,6 +628,9 @@ img {
 }
 @media (min-width: 993px) {
   
+  .product-destacado-single{
+    width: 50vw;
+  }
    .carousel-item{
      width: 15vw;
    }
