@@ -50,24 +50,25 @@
       
           <div class="content-menu2 responsive input-field">
              <div class="search">
-                <i class="material-icons">search</i>
+                <i class="material-icons align-items">search</i>
              </div>  
             <?php get_search_form();?>
           </div>
      </div>
-     <a href="#" data-target="slide-out" class="sidenav-trigger mostrar">
-         <i class="material-icons black-color">menu</i>
-     </a>
+     <div class="flex-icono-mobile">
+         <a href="#" data-target="slide-out" class="sidenav-trigger mostrar">
+             <i class="material-icons black-color">menu</i>
+         </a>
+         <div class="search-2 align-items">
+                <i class="material-icons  black-color">search</i>
+         </div>
+     </div>
 </nav>
 
 
   <ul id="slide-out" class="sidenav">
-    
-        <?php
-                $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'kervis-nav',);
-                wp_nav_menu($args);     
-            ?>
-        <div class="form-nav">
+    <?php $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'kervis-nav',);  wp_nav_menu($args);         ?>
+    <div class="form-nav">
             <?php get_search_form();?>
          </div>
      </div>

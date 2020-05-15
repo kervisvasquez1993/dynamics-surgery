@@ -1,18 +1,25 @@
 // declaracion de variable
 var search = document.querySelector(".content-menu2"),
   formBuscar = document.querySelector(".flex-seach"),
-  iconoBuscar = document.querySelector(".search");
+  iconoBuscar = document.querySelector(".search"),
+  iconoBuscar2 = document.querySelector(".search-2")
+  
 
 // llamado del evento
 document.addEventListener("DOMContentLoaded", materialize);
 iconoBuscar.addEventListener("click", buscador);
 search.addEventListener("mouseleave", salir);
+iconoBuscar2.addEventListener('click', mostrarBuscador)
+function mostrarBuscador(e){
+    e.preventDefault()
+    
+
+}
 function buscador(e) {
   e.preventDefault();
   iconoBuscar.classList.add("ocultar");
   formBuscar.classList.remove("ocultar");
 }
-
 function salir(e) {
   e.preventDefault;
   iconoBuscar.classList.remove("ocultar");

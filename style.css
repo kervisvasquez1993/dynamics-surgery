@@ -17,6 +17,31 @@ Use it to make something cool, have fun, and share what you've learned with othe
   color: #000000 !important;
 }
 
+/*seccion de barra nav*/
+.flex-icono-mobile{
+  display: flex;
+  align-items: center;
+}
+.search-2{
+  display: block;
+}
+.align-items{
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+/*fin*/
+.logo{
+  width: 60%;
+  z-index: 1;
+ 
+}
+
+.menu-menu-principal-1{
+  z-index: 2;
+}
+
+
 .texto-center{
   width: 80vw;
 }
@@ -204,8 +229,7 @@ img.iconos-nosotros{
   z-index: 0;
 }
 .logo{
-  width: 20%;
-  z-index:1000 !important;
+  z-index:10 !important;
   
 }
 .z-index{
@@ -473,6 +497,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .logo{
+    width: 60%;
+  }
   .texto-center{
     width: 50vw;
   }
@@ -627,6 +654,9 @@ img {
   }
 }
 @media (min-width: 993px) {
+  .search-2{
+    display: none;
+  }
   
   .product-destacado-single{
     width: 50vw;
@@ -696,7 +726,6 @@ img {
   }
   .content-menu {
     display: flex;
-
     width: 100%;
     justify-content: space-between;
   }
