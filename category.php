@@ -3,7 +3,9 @@
  $category = get_category( get_query_var( 'cat' ) );
 ?>
 
-<div class="img-hero" style="background:url('<?php the_field('imagen_cabecera_producto');?>');">
+<div class="img-hero2
+
+" style="background:url('<?php the_field('imagen_cabecera_producto');?>');">
    <h2 class="center">Titulo Dynamics surgery </h2>
 </div>
 <div class="container">
@@ -27,7 +29,13 @@
           <?php require_once dirname( __FILE__ ).'/template-parts/list-category.php';?>
        </div>
         <div class="category_content">
-                <h4><?php echo get_cat_name($cat2);?></h4>
+            
+             <div class="titulo-wrapper2 color-titilo-secundario">
+                <div class="hijo-wrapper">
+                  <h5><?php echo get_cat_name($cat2);?></h5>
+                  <div class="titulo-border2"></div>
+                </div>
+             </div>
                 <div class="img-category">
                     <?php   //$avatar = get_term_meta( get_queried_object_id(), 'img_category', true );
                            $avatar = get_field('img_category', 'category_'. $cat .''); 

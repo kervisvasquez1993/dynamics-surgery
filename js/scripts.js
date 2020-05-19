@@ -2,18 +2,33 @@
 var search = document.querySelector(".content-menu2"),
   formBuscar = document.querySelector(".flex-seach"),
   iconoBuscar = document.querySelector(".search"),
-  iconoBuscar2 = document.querySelector(".search-2")
+  iconoBuscar2 = document.querySelector(".search-2"),
+  formMobile = document.querySelector(".form-mobile"),
+  flexIconoMobile = document.querySelector(".flex-icono-mobile"),
+  btnAtras = document.querySelector('.blue-content')
+  
+
+
+  
   
 
 // llamado del evento
 document.addEventListener("DOMContentLoaded", materialize);
 iconoBuscar.addEventListener("click", buscador);
 search.addEventListener("mouseleave", salir);
-iconoBuscar2.addEventListener('click', mostrarBuscador)
+iconoBuscar2.addEventListener('click', mostrarBuscador),
+btnAtras.addEventListener('click', cerrarBuscador)
 function mostrarBuscador(e){
     e.preventDefault()
-    
+    formMobile.classList.remove("ocultar-2")
+    flexIconoMobile.classList.add("ocultar-2")
 
+}
+function cerrarBuscador(e){
+  e.preventDefault();
+  formMobile.classList.add("ocultar-2")
+  flexIconoMobile.classList.remove("ocultar-2")
+  
 }
 function buscador(e) {
   e.preventDefault();
@@ -35,7 +50,6 @@ function materialize() {
 // menu pegajoso
 
 var stickymenu = document.querySelector('.menu-principal')
-console.log(stickymenu)
 stickymenuoffset = stickymenu.offsetTop;
 window.addEventListener("scroll", function(t) {
     requestAnimationFrame(function() {

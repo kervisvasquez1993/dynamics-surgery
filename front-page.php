@@ -4,23 +4,22 @@
 <div class="imagen-destacada">
     <?php while(have_posts()): the_post();?>
         <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
-           
-                <h2 class="center color-font-header texto-center"><?php the_field('titulo_cabecera');?></h2>
-                
+             <h2 class="center color-font-header texto-center"><?php the_field('titulo_cabecera');?></h2>
         </div>
-
     <?php endwhile;?>
 </div>
 </header>
+<div class="conteiner-header">
 <div class="container">
     <div class="row">
         <h4 class="center"><?php the_field('titulo_slogan');?></h4>
     </div>
 </div>
 <?php get_template_part('template-parts/icono','front');?>
+</div>
 <br><br>
 
-
+<div class="min-heigth">
 <section class="section  background-principal texto-important no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -35,9 +34,10 @@
         </div>
         
 </section>
+
 <section class="grey paddin-vertical">
        <div class="titulo-wrapper color-titilo-secundario">
-           <h3>Nuetros Productos</h3>
+           <h3>Nuetross Productos</h3>
            <div class="titulo-border"></div>
        </div>
     <div class="container">

@@ -1,8 +1,9 @@
 <?php
 // variables para obtener categorias
 $list_subcat = array();
-$cat; 
-$the_query = new WP_Query( array( 'cat' => $cat, 'posts_per_page' => -1 ) );
+$cat;
+$cantidad = -1;
+$the_query = new WP_Query( array( 'cat' => $cat, 'posts_per_page' => $cantidad ) );
 $parent_cat = get_category_link($cat);
 $cat2 = $the_query->query[cat]; //id de la categoria    
 // echo get_cat_name($cat2); // nombre de la categoria 

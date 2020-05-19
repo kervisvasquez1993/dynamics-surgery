@@ -13,6 +13,58 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+.min-heigth{
+  min-height: 100vh ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content-producntos{
+  min-width: 80vw;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.constent-card{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.constent-card a {
+
+}
+.muestra-content{
+  text-align: initial;
+}
+.raya{
+  width: 30px;
+  height: 3px;
+  background: #036588;
+  margin: 5px;
+}
+.card-title-flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 35px;
+  
+}
+.blue-content{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.titulo-product{
+  font-size: 18px;
+  color: #036588;
+}
 .black-color{
   color: #000000 !important;
 }
@@ -24,11 +76,25 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .search-2{
   display: block;
+  cursor: pointer;
 }
 .align-items{
   display: flex;
   align-items: center;
   padding-top: 2px;
+}
+.ocultar-2{
+  display: none !important;
+}
+.form-mobile{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.form-mobile form{
+  width: 90%;
 }
 /*fin*/
 .logo{
@@ -47,7 +113,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .titulo-border{
   border-bottom: 4px solid #388faf !important;
-  width: 5%;
+  width: 10%;
+}
+.titulo-border2{
+  border-bottom: 4px solid #388faf !important;
+  width: 50%;
 }
 .btn-grueso{
   width: 20vw;
@@ -59,6 +129,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
   align-items: center;
   padding: 20px;
 }
+.titulo-wrapper2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  
+  padding: 20px;
+}
+.hijo-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .paddin-vertical{
   padding-bottom: 50px;
   display: flex;
@@ -69,6 +151,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  
 }
 .conatiner-slider {
   height: auto;
@@ -89,7 +175,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+ 
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -329,13 +415,29 @@ img{
   display: flex;
   flex-direction: column;
 }
-
+.conteiner-header{
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .img-hero {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 40vh;
+  min-height: 45vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.img-hero2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 35vh;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -370,15 +472,19 @@ img {
   position: absolute;
   z-index: 0;
 }
-.header-productos {
+  .header-productos {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  min-height: 25vh;
+  justify-content: flex-start;
+  min-height: 15vh;
+  
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .wrapper-card {
-  padding: 80px 0;
+  padding: 0px;
 }
 .contactanos-header {
   padding: 0 35px;
@@ -434,14 +540,18 @@ img {
 }
 .img-category{
   width: 100%;
+  height: 50%;
+  
   
 }
 
+
 .menu-interno{
-  width: 30vw;
+  min-width: 15vw;
+  min-height: 5vh;
   display: flex;
   justify-content: space-evenly;
-  margin:25px;
+ 
   align-items: center;
 }
 .menu-interno a{
@@ -497,6 +607,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .form-mobile{
+    width: 50%;
+  }
   .logo{
     width: 60%;
   }
@@ -612,7 +725,7 @@ img {
   }
   .flex-start{
     display: flex;
-    background: red;
+    
     align-items: center !important;
   }
   .wrappers {
@@ -654,6 +767,10 @@ img {
   }
 }
 @media (min-width: 993px) {
+
+  .logo{
+    width: 30%;
+  }
   .search-2{
     display: none;
   }
@@ -680,6 +797,7 @@ img {
 }
   .menu-interno{
     width: 10vw;
+   
   }
   .card-padre {
     width: 85%;
@@ -782,7 +900,7 @@ img {
   }
 
   .ocultar {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 1200px) {

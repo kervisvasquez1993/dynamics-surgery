@@ -35,23 +35,23 @@
             <h3 class="color-principal"><?php the_field('eslogan_titulo');?></h3>
             <p class="color-secundario"><?php the_field('eslogan_descripcion');?></p>
         </div>
-        <form class="row  formulario">
+        <form method="POST" class="row  formulario">
             <div class="col s12 ">
               <div class="row">
                 <div class="input-field col s12 m4">
                   <i class="material-icons prefix">perm_identity</i>
-                  <input type="text" id="autocomplete-input" class="autocomplete">
-                  <label for="autocomplete-input">Nombre Completo</label>
+                  <input type="text" id="nombre_completo" class="autocomplete" name="fullname">
+                  <label for="nombre_completo">Nombre Completo</label>
                 </div>
                 <div class="input-field col s12 m4">
                   <i class="material-icons prefix">email</i>
-                  <input type="text" id="autocomplete-input" class="autocomplete">
-                  <label for="autocomplete-input">Email</label>
+                  <input type="text" id="email" class="autocomplete" name="email">
+                  <label for="email">Email</label>
                 </div>
                 <div class="input-field col s12 m4">
                   <i class="material-icons prefix">phone</i>
-                  <input type="text" id="autocomplete-input" class="autocomplete">
-                  <label for="autocomplete-input">Teléfono</label>
+                  <input type="text" id="phone_number" class="autocomplete" name="phone">
+                  <label for="phone_number">Teléfono</label>
                 </div>
                 <div class="input-field col s12">
                   <i class="material-icons prefix">textsms</i>

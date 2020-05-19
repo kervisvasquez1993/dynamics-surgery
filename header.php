@@ -55,6 +55,14 @@
             <?php get_search_form();?>
           </div>
      </div>
+     <div class="form-mobile ocultar-2">
+          <span class="material-icons blue-content boton-cerrar black-color">
+              arrow_back
+          </span>
+          <?php get_search_form();?>
+            
+     </div>
+     
      <div class="flex-icono-mobile">
          <a href="#" data-target="slide-out" class="sidenav-trigger mostrar">
              <i class="material-icons black-color">menu</i>
@@ -68,13 +76,13 @@
 
   <ul id="slide-out" class="sidenav">
     <?php $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'kervis-nav',);  wp_nav_menu($args);         ?>
-    <div class="form-nav">
-            <?php get_search_form();?>
-         </div>
+    
      </div>
   </ul>
   
   </div>
+
+
   
                 
             
