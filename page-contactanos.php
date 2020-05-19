@@ -40,7 +40,7 @@
               <div class="row">
                 <div class="input-field col s12 m4">
                   <i class="material-icons prefix">perm_identity</i>
-                  <input type="text" id="nombre_completo" class="autocomplete" name="fullname">
+                  <input type="text" id="nombre_completo" class="autocomplete" name="nombrecompleto">
                   <label for="nombre_completo">Nombre Completo</label>
                 </div>
                 <div class="input-field col s12 m4">
@@ -55,12 +55,13 @@
                 </div>
                 <div class="input-field col s12">
                   <i class="material-icons prefix">textsms</i>
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <textarea id="textarea1" class="materialize-textarea" name="mensaje"></textarea>
                   <label for="textarea1">Mensaje</label>
                 </div>
               </div>
             </div>
-            <input type="submit" class="btn btn-form background-boton">
+            <input type="submit" class="btn btn-form background-boton" value="enviar">
+            <input type="hidden" name="send_contact_form" value="1 ">
         </form>
         
 </div>

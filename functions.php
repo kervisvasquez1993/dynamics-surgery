@@ -10,7 +10,25 @@ require_once dirname( __FILE__ ).'/inc/custom-field.php';
 require_once dirname( __FILE__ ).'/inc/query-posts-type.php';
 require_once dirname( __FILE__ ).'/inc/field-category.php';
 require_once dirname( __FILE__ ).'/inc/relation.php';
+require_once dirname( __FILE__ ).'/inc/contact_form_save.php';
+require_once dirname( __FILE__ ).'/inc/database.php';
+require_once dirname( __FILE__ ).'/inc/contacto.php';
 
+
+function contact_form_menu()
+{
+   add_menu_page( 'Contacto', 'Contacto', 'Administrador', 'contact_form','contact_form_comments',  'dashicons-id-alt',20); 
+}
+
+
+function contact_form_comments(){
+    echo 'hola';
+}
+
+add_action( 'admin_menu','contact_form_menu');
+
+
+// Cargar los estilos y los script de la pagina
 
 // Cargar los estilos y los script de la pagina
 
@@ -28,7 +46,7 @@ function style(){
     
     }
     
-    add_action('wp_enqueue_scripts','style'); 
+    add_action('wp_enqueue_scripts','style');   
 
     // agregamos soporte al theme 
 
@@ -165,3 +183,4 @@ function modificar_post_object() {
 
 add_action( 'admin_menu', 'modificar_post_label' );
 add_action( 'init', 'modificar_post_object' );
+
