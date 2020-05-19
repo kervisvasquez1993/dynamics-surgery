@@ -13,6 +13,7 @@ require_once dirname( __FILE__ ).'/inc/relation.php';
 require_once dirname( __FILE__ ).'/inc/contact_form_save.php';
 require_once dirname( __FILE__ ).'/inc/database.php';
 require_once dirname( __FILE__ ).'/inc/contacto.php';
+require_once dirname( __FILE__ ).'/inc/custom_contact_form.php';
 
 
 function contact_form_menu()
@@ -42,12 +43,14 @@ function style(){
     // cargar los script de materialize y scripts
     wp_enqueue_script('materialize-js','https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js', array(),'1.0.0', true);
     wp_enqueue_script('slider-js','https://unpkg.com/swiper/js/swiper.min.js', array(),'1.0.0', true);
+    if(is_page('contactanos')):
+        wp_enqueue_script('script_contactanos', get_template_directory_uri().'/js/contact_form.js',array(),'1.0.0', true);
+    endif;    
     wp_enqueue_script('scripts', get_template_directory_uri().'/js/scripts.js',array(),'1.0.0', true);
     
     }
     
-    add_action('wp_enqueue_scripts','style');   
-
+    add_action('wp_enqueue_scripts','style'); 
     // agregamos soporte al theme 
 
     function menus(){

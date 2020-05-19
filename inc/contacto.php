@@ -21,9 +21,7 @@ function contacto_icono()
                 <th class="manage-column">Telefono</th>
                 <th class="manage-column">Mensaje</th>
             </tr>
-
             </thead>
-
             <tbody>
 
             <?php
@@ -40,6 +38,9 @@ function contacto_icono()
                     <td><?php echo $registro['email'];?></td>
                     <td><?php echo $registro['telefono'];?></td>
                     <td><?php echo $registro['mensaje'];?></td>
+                    <td>
+                        <a href="#" class="u-delete" data-contact-id="<?php echo $row['contact_id']?>">Eliminar</a>
+                    </td>
                 </tr>
 
             <?php }?>

@@ -35,6 +35,9 @@
             <h3 class="color-principal"><?php the_field('eslogan_titulo');?></h3>
             <p class="color-secundario"><?php the_field('eslogan_descripcion');?></p>
         </div>
+
+
+
         <form method="POST" class="row  formulario">
             <div class="col s12 ">
               <div class="row">
@@ -50,7 +53,7 @@
                 </div>
                 <div class="input-field col s12 m4">
                   <i class="material-icons prefix">phone</i>
-                  <input type="text" id="phone_number" class="autocomplete" name="phone">
+                  <input type="text" id="phone_number" class="autocomplete" name="telefono">
                   <label for="phone_number">Teléfono</label>
                 </div>
                 <div class="input-field col s12">
