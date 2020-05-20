@@ -39,7 +39,7 @@ function contacto_icono()
                     <td><?php echo $registro['telefono'];?></td>
                     <td><?php echo $registro['mensaje'];?></td>
                     <td>
-                        <a href="#" class="u-delete" data-contact-id="<?php echo $row['contact_id']?>">Eliminar</a>
+                        <a href="#" class="u-delete" data-contact-id="<?php echo $registro['id']?>">Eliminar</a>
                     </td>
                 </tr>
 
