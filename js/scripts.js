@@ -7,10 +7,29 @@ var search = document.querySelector(".content-menu2"),
   flexIconoMobile = document.querySelector(".flex-icono-mobile"),
   btnAtras = document.querySelector('.blue-content'),
   ifSliderr = document.querySelector('.swiper-container'),
-  ifSliderr2 = document.querySelector('.kervis-slide')
+  ifSliderr2 = document.querySelector('.kervis-slide'),
+  //seccion de las categorias
+  categoryid = document.querySelectorAll('.category_id')
   
 
 
+  //category
+
+  if(categoryid)
+  {
+    titleCategory = document.getElementById('title_Category')
+    dataTitleCat = titleCategory.dataset.title
+    arrCategoryId = Array.from(categoryid);
+    arrCategoryId.forEach((element)=>{ 
+      menuCategory = element.dataset.category
+      if(menuCategory === dataTitleCat)
+      {
+         console.log(element.classList.add('red'))
+      }
+
+    });
+
+  }
   
   
 

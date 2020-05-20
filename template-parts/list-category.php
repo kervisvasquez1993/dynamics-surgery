@@ -11,15 +11,16 @@ $cat2 = $the_query->query[cat]; //id de la categoria
 
 $categories = get_categories(array('orderby' => 'name','order'   => 'ASC', "hide_empty" => false)); //traer las categorias de 
     
-foreach( $categories as $category )
-   {
-   $category_link = sprintf( 
-       '<a href="%1$s" alt="%2$s">%3$s</a>',
-       esc_url( get_category_link( $category->term_id ) ),
-       esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
-       esc_html( $category->name )
-   );
-   echo '<p>' . sprintf($category_link ) . '</p> ';
-  
-} 
+foreach( $categories as $category ): 
+    $category_id = $category->term_id;
 ?>
+
+<p class="test">
+    <a class="category_id" href="<?php  echo esc_url( get_category_link( $category_id ));?>" data-category="<?php echo $category_id;?>">
+         <?php echo esc_html( $category->name );?>
+    </a>
+</p>
+
+
+<?php 
+ endforeach;

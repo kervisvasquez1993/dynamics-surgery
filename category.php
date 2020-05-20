@@ -2,7 +2,6 @@
  get_header() ;
  $category = get_category( get_query_var( 'cat' ) );
 ?>
-
 <div class="img-hero2
 
 " style="background:url('<?php the_field('imagen_cabecera_producto');?>');">
@@ -32,7 +31,9 @@
             
              <div class="titulo-wrapper2 color-titilo-secundario">
                 <div class="hijo-wrapper">
-                  <h5><?php echo get_cat_name($cat2);?></h5>
+                  <h5 id="title_Category" data-title="<?php echo $cat2 ?>">
+                      <?php echo get_cat_name($cat2);?>
+                  </h5>
                   <div class="titulo-border2"></div>
                 </div>
              </div>
