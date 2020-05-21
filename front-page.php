@@ -18,6 +18,9 @@
 <?php get_template_part('template-parts/icono','front');?>
 </div>
 <br><br>
+  <?php 
+     
+  ?>
 
 <div class="min-heigth">
 <section class="section  background-principal texto-important no-pad-bot">
@@ -29,7 +32,7 @@
 </section>
 <section class="section  container no-pad-bot ">
       
-        <div class="row producto-destacado-front producto-principal ">
+        <div class="row producto-destacado-front productao-principal ">
              <?php producto_destacado(1);?>
         </div>
         

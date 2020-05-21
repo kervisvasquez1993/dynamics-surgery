@@ -14,6 +14,7 @@ require_once dirname( __FILE__ ).'/inc/contact_form_save.php';
 require_once dirname( __FILE__ ).'/inc/database.php';
 require_once dirname( __FILE__ ).'/inc/contacto.php';
 require_once dirname( __FILE__ ).'/inc/custom_contact_form.php';
+require_once dirname( __FILE__ ).'/inc/js_php.php';
 
 
 function contact_form_menu()

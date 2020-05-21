@@ -9,27 +9,29 @@ var search = document.querySelector(".content-menu2"),
   ifSliderr = document.querySelector('.swiper-container'),
   ifSliderr2 = document.querySelector('.kervis-slide'),
   //seccion de las categorias
-  categoryid = document.querySelectorAll('.category_id')
+  categoryid = document.querySelectorAll('.category_id'),
+  titleCategory = document.getElementById('title_Category')
+  
   
 
 
   //category
 
-  if(categoryid)
+  if(categoryid && titleCategory)
   {
-    titleCategory = document.getElementById('title_Category')
+    
     dataTitleCat = titleCategory.dataset.title
     arrCategoryId = Array.from(categoryid);
     arrCategoryId.forEach((element)=>{ 
       menuCategory = element.dataset.category
       if(menuCategory === dataTitleCat)
       {
-         console.log(element.classList.add('red'))
+         element.classList.add('active_category')
       }
-
     });
 
   }
+  
   
   
 
@@ -130,3 +132,6 @@ var swiper = new Swiper('.kervis-slider', {
   },
 });
 }
+//evento para el boton ver mas 
+
+

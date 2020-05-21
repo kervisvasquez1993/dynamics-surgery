@@ -10,7 +10,7 @@
 <div class="container">
         <div class="menu-interno">
            <a href="<?php echo esc_url(home_url('/'));?>">Inicio </a>
-           >
+           <span>></span>
            <?php  $producto = get_page_by_title('Productos');
             $enlace_producto = $producto->ID;
            ?>
@@ -19,8 +19,6 @@
             </a>
         </div>
 </div>
-   
-
 <?php echo get_term_meta( get_the_ID(), 'yourprefix_term_avatar',true )?>
 <section class="container">
    <div class="flex-category">
@@ -47,7 +45,6 @@
                 </div>
                 <div class="description">
                        <?php echo category_description($cat); ?>
-                       
                 </div>
                 <div>
                    <?php
@@ -61,10 +58,11 @@
                                 <a href="<?php the_permalink();?>"><?php the_title(); ?>
                               </p>
                         </div>
-        
+                        <?php wp_link_pages (array ('next_or_number' => 'next', 'previouspagelink' => '& laquo;', 'nextpagelink' => '& raquo;')); ?>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                    <?php endif; ?>
+                   
                 </div>
          </div>
     </div>

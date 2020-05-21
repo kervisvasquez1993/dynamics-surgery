@@ -14,13 +14,9 @@ $categories = get_categories(array('orderby' => 'name','order'   => 'ASC', "hide
 foreach( $categories as $category ): 
     $category_id = $category->term_id;
 ?>
-
-<p class="test">
-    <a class="category_id" href="<?php  echo esc_url( get_category_link( $category_id ));?>" data-category="<?php echo $category_id;?>">
-         <?php echo esc_html( $category->name );?>
-    </a>
-</p>
-
+  <a class="category_id" href="<?php  echo esc_url( get_category_link( $category_id ));?>" data-category="<?php echo $category_id;?>"> 
+        <?php echo esc_html( $category->name );?> 
+  </a>
 
 <?php 
  endforeach;
