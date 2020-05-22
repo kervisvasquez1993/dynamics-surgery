@@ -20,9 +20,8 @@ function kervis_query_productos($cantidad = -1)
               <div class="">
                   <div class="card">
                       <div class="card-image">
-                      <img src="<?php echo $avatar;?>" alt="imagen de la categoría">
+                          <img src="<?php echo $avatar;?>" alt="imagen de la categoría">
                       </div>
-                    
                   </div>
                   <div class="constent-card">
                      <a href="<?php echo get_category_link($link)?>">

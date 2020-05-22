@@ -188,3 +188,4 @@ function modificar_post_object() {
 add_action( 'admin_menu', 'modificar_post_label' );
 add_action( 'init', 'modificar_post_object' );
 
+/*filtrar los resultados de busquedas*/

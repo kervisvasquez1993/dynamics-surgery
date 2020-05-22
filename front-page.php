@@ -19,7 +19,7 @@
 </div>
 <br><br>
   <?php 
-     
+     get_option( 'category_base' );
   ?>
 
 <div class="min-heigth">

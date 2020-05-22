@@ -50,20 +50,19 @@
                    <?php
                      ?>
                 </div>
-                <div>
+                <div class="test-flex">
                    <?php if ( $the_query->have_posts() ) : ?>
-                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                        <div class="producto-select">
-                             <p>
+                           
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                           <div class="producto-select">
+                             <p id="padre-title" class="">
                                 <a href="<?php the_permalink();?>"><?php the_title(); ?>
                               </p>
-                        </div>
-                        <?php wp_link_pages (array ('next_or_number' => 'next', 'previouspagelink' => '& laquo;', 'nextpagelink' => '& raquo;')); ?>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
-                   <?php endif; ?>
-                   
-                </div>
+                           </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                     <?php endif; ?>
+                  </div>
          </div>
     </div>
 </section>

@@ -12,7 +12,25 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+.test-flex
+{
+  display: flex;
+  
+  flex-direction: column-reverse;
+}
+.ocultar-titulo{
+  display: none;
+}
+.mostrar-titulo{
+  display: block;
+}
+.w-mitad{
+width: 100px;
+}
+.boton {
+  border-radius: 2px blue solid ;
+  cursor: pointer;
+}
 .min-heigth{
   min-height: 100vh ;
   display: flex;

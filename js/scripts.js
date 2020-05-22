@@ -13,6 +13,7 @@ var search = document.querySelector(".content-menu2"),
   titleCategory = document.getElementById('title_Category')
   
   
+  
 
 
   //category
@@ -132,6 +133,4 @@ var swiper = new Swiper('.kervis-slider', {
   },
 });
 }
-//evento para el boton ver mas 
-
-
+  
