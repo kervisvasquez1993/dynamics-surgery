@@ -12,6 +12,26 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.tagcloud > *{
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.tag-cloud-link{
+  color: #000000;
+  font-size: 20pt !important;
+}
+.conatiner-slider .swiper-container3 {
+  width: 100%;
+  height: 100%;
+  background: red !important;
+}
+.conatiner-slider .swiper-container3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
 .test-flex
 {
   display: flex;
@@ -71,6 +91,13 @@ width: 100px;
   height: 35px;
   
 }
+.card-title-flex2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35px;
+  width: 100% !important;
+}
 .blue-content{
   width: 50px;
   height: 50px;
@@ -82,6 +109,14 @@ width: 100px;
 .titulo-product{
   font-size: 18px;
   color: #036588;
+}
+.titulo-product2{
+  font-size: 14px;
+  color: #036588;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 .black-color{
   color: #000000 !important;
@@ -164,8 +199,18 @@ width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+ 
 }
 .card-personalizado{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  
+}
+..card-personalizado2{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -565,7 +610,7 @@ img {
 .img-category img {
   width: 100%;
   height: 200%;
-  background: red;
+ 
   
 }
 

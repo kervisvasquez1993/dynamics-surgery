@@ -50,23 +50,45 @@
                    <?php
                      ?>
                 </div>
-                <div class="test-flex">
-                   <?php if ( $the_query->have_posts() ) : ?>
-                           
-                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                           <div class="producto-select">
-                             <p id="padre-title" class="">
-                                <a href="<?php the_permalink();?>"><?php the_title(); ?>
-                              </p>
-                           </div>
-                        <?php endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                     <?php endif; ?>
-                  </div>
+                
+                <section class="paddin-vertical">
+                    <div class="conatiner-slider">
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                          <?php while( $the_query->have_posts()): $the_query->the_post();?>
+                                <div class="swiper-slide">
+                                   <div class="card-personalizado2">
+                                       <div class="">
+                                           <div class="card-image">
+                                           <?php the_post_thumbnail( 'small', array('class' => 'card-img-top') );?>
+                                          </div>
+                                       </div>
+                                 
+                                      <a href="<?php the_permalink();?>">
+                                        <span class="card-title-flex2">
+                                            <p class="titulo-product2"><?php the_title();?></p>
+                                        </span>
+                                      </a>
+                                      
+                                   </div>
+                                </div>
+                               <?php
+                               endwhile;
+                               wp_reset_postdata();?>
+                          </div>
+                          <!-- Add Pagination -->
+                          
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                   
+                 
+               </section>
+                <!--FIN-->
          </div>
     </div>
 </section>
 
 <?php get_footer();?>
-
 

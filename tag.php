@@ -1,9 +1,4 @@
-<?php 
-    /**
-     * Template Name: eventos
-    */
-    get_header();
-?>
+<?php get_header();?>
 <?php while(have_posts()): the_post();?>
     <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
          <h2 class="center color-font-header texto-center"><?php the_field('titulo_cabecera');?></h2>
@@ -17,7 +12,24 @@
     <div class="row">
 
        <section class=" col s12 m12 l8 ">
-         <?php kervis_query_eventos(-1);?>
+         <?php 
+         $args2 = array(
+            'posts_per_page'  => -1,
+            'tag_id'          => $tag,
+            'fields' 	  => 'ids',
+        );
+        $tag_query = new WP_Query( $args2 );
+         
+         while( $tag_query->have_posts()): $tag_query->the_post();?>
+         <div class="card-padre">
+            <div class="card-header">
+                <h6><?php the_title();?></h6>
+            </div>
+            <div class="card">
+                <a href="<?php the_permalink();?>" class="btn">Ver Más</a>
+            </div>
+         </div>
+        <?php endwhile;?>
          <div class="text-center">
             <div class="navigation">
                 <?php if(function_exists('pagenavi')) { pagenavi(); } ?>
@@ -29,5 +41,4 @@
 
 </div>
 </div>
-        
 <?php get_footer();?>

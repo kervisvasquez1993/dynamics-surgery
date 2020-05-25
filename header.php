@@ -59,7 +59,12 @@
           <span class="material-icons blue-content boton-cerrar black-color">
               arrow_back
           </span>
-          <?php get_search_form();?>
+          <form role="search" method="get" class="" action="<?php echo home_url( '/' ); ?>">
+                <input   type="search" class=" autocomplete"  placeholder="<?php echo esc_attr_x( 'buscar', 'placeholder' ) ?>"
+                value="<?php echo get_search_query() ?>" name="s"
+                title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+           </form>
+
             
      </div>
      

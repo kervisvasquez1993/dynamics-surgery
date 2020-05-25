@@ -133,4 +133,12 @@ var swiper = new Swiper('.kervis-slider', {
   },
 });
 }
-  
+
+
+var swiper3 = new Swiper('.swiper-container3', {
+  direction: 'vertical',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

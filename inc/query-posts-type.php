@@ -73,6 +73,8 @@ function carousel($cantidad){
     endwhile;
     wp_reset_postdata();
 }
+
+
 function eventos_front($cantidad = -1)
 {
     $args = array(
@@ -179,4 +181,3 @@ function producto_destacado($cantidad)
 ?>
 
 
-      
