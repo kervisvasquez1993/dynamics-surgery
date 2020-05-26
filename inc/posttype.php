@@ -69,9 +69,9 @@ function eventos() {
         'rewrite'            => array( 'slug' => 'eventos' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
-        'hierarchical'       => true,
+        'hierarchical'       => false,
         'menu_position'      => 6,
-        'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' , 'genesis-cpt-archives-settings', 'genesis-seo', 'genesis-scripts', 'genesis-layouts', 'genesis-rel-author', ),
+        'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' , 'genesis-cpt-archives-settings', 'genesis-seo', 'genesis-scripts', 'genesis-layouts', 'genesis-rel-author' ),
         'taxonomies'          => array( 'post_tag' ),
     );
 

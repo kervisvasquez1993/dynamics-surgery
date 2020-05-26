@@ -1,4 +1,5 @@
 <?php 
+
 function pagenavi($before = '', $after = '') 
  {
      global $wpdb, $wp_query;

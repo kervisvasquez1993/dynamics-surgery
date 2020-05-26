@@ -15,6 +15,7 @@ require_once dirname( __FILE__ ).'/inc/database.php';
 require_once dirname( __FILE__ ).'/inc/contacto.php';
 require_once dirname( __FILE__ ).'/inc/custom_contact_form.php';
 require_once dirname( __FILE__ ).'/inc/js_php.php';
+require_once dirname( __FILE__ ).'/inc/paginacion.php';
 
 
 function contact_form_menu()
@@ -189,3 +190,13 @@ add_action( 'admin_menu', 'modificar_post_label' );
 add_action( 'init', 'modificar_post_object' );
 
 /*filtrar los resultados de busquedas*/
+
+function add_custom_pt( $query ) {
+    if ( !is_admin() && $query->is_main_query() ) {
+        if ( $query->is_search ) {
+            $query->set( 'category', array('productos'));
+        }
+    }
+}
+
+

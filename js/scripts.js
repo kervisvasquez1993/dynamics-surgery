@@ -1,3 +1,4 @@
+
 // declaracion de variable
 var search = document.querySelector(".content-menu2"),
   formBuscar = document.querySelector(".flex-seach"),
@@ -11,7 +12,6 @@ var search = document.querySelector(".content-menu2"),
   //seccion de las categorias
   categoryid = document.querySelectorAll('.category_id'),
   titleCategory = document.getElementById('title_Category')
-  
   
   
 
@@ -71,6 +71,7 @@ function salir(e) {
 function materialize() {
   var elems = document.querySelectorAll(".sidenav");
   var instances = M.Sidenav.init(elems);
+
 }
 
 }
