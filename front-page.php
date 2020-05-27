@@ -12,7 +12,7 @@
 <div class="conteiner-header">
 <div class="container">
     <div class="row">
-        <h4 class="center"><?php the_field('titulo_slogan');?></h4>
+        <h4 class="center Franklin-Black"><?php the_field('titulo_slogan');?></h4>
     </div>
 </div>
 <?php get_template_part('template-parts/icono','front');?>
@@ -40,7 +40,7 @@
 
 <section class="grey paddin-vertical">
        <div class="titulo-wrapper color-titilo-secundario">
-           <h3>Nuetross Productos</h3>
+           <h3>Nuetros Productos</h3>
            <div class="titulo-border"></div>
        </div>
     <div class="container">

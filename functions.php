@@ -41,6 +41,7 @@ function style(){
     wp_enqueue_style('materialize','https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css', array(),'1.0.0'.'all');
     wp_enqueue_style('slider','https://unpkg.com/swiper/css/swiper.min.css', array(),'1.0.0'.'all');
     wp_enqueue_style('material-icom','https://fonts.googleapis.com/icon?family=Material+Icons', array(),'4.7.0'.'all');
+    wp_enqueue_style('fuentes', get_template_directory_uri().'/css/fonts.css', array(),'1'.'all');
     wp_enqueue_style('style',get_stylesheet_uri());
     // cargar los script de materialize y scripts
     wp_enqueue_script('materialize-js','https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js', array(),'1.0.0', true);

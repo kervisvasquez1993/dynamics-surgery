@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "LibreFranklin-ExtraBolt";
+    src: url('../font/fina/LibreFranklin-ExtraBold.ttf');
+}
+.Bold{
+    font-family: "LibreFranklin-EstraBol";
+}
+@font-face{
+    font-family: "LibreFranklin-ExtraBlackItalic";
+    src: url('../font/fina/LibreFranklin-ExtraBoldItalic.ttf');
+}
+.extra-bold{
+    font-family: "LibreFranklin-ExtraBlackItalic";
+}
+@font-face{
+    font-family: "LibreFranklin-light";
+    src: url('../font/fina/LibreFranklin-Light.ttf');
+}
+.light{
+    font-family: "LibreFranklin-light";
+}
+@font-face{
+    font-family: "LibreFranklin-lightItalic";
+    src: url("../font/fina/LibreFranklin-LightItalic.ttf");
+}
+.light-italic{
+    font-family: "LibreFranklin-lightItalic";
+}
+@font-face{
+    font-family: "LibreFraklinMedium";
+    src: url('../font/fina/LibreFranklin-Medium.ttf');
+}
+.medium{
+    font-family: "LibreFraklinMedium";
+}
+@font-face{
+    font-family: "LibreFranklin-MediumItalic";
+    src: url('../font/fina/LibreFranklin-MediumItalic.ttf');
+}
+.medium-italic{
+    font-family: "LibreFranklin-MediumItalic";
+}
+@font-face{
+    font-family: "LibreFranklin-SemiBold";
+    src: url("../font/fina/LibreFranklin-SemiBold.ttf");
+}
+
+.semi-bold{
+    font-family: "LibreFranklin-SemiBold";
+}
+@font-face{
+    font-family: "LibreFranklinSemiBoldItali";
+    src: url("../font/fina/LibreFranklin-SemiBoldItalic.ttf");
+}
+.semi-bold-italic{
+    font-family: "LibreFranklinSemiBoldItali";
+}
