@@ -4,7 +4,7 @@
 <div class="imagen-destacada">
     <?php while(have_posts()): the_post();?>
         <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
-             <h2 class="center color-font-header texto-center"><?php the_field('titulo_cabecera');?></h2>
+             <h2 class="center color-font-header texto-center font-weight-15px Bold"><?php the_field('titulo_cabecera');?></h2>
         </div>
     <?php endwhile;?>
 </div>
@@ -12,7 +12,7 @@
 <div class="conteiner-header">
 <div class="container">
     <div class="row">
-        <h4 class="center Franklin-Black"><?php the_field('titulo_slogan');?></h4>
+        <h4 class="center Franklin-Black semi-bold titulo-2"><?php the_field('titulo_slogan');?></h4>
     </div>
 </div>
 <?php get_template_part('template-parts/icono','front');?>

@@ -42,7 +42,7 @@
             </a>
           
             <?php
-                $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'menus-dinamico responsive',);
+                $args = array('theme_location' => 'header_menu','container' => 'ul','menu_class'=> 'menus-dinamico responsive medium',);
                 wp_nav_menu($args);     
             ?>
           </div>

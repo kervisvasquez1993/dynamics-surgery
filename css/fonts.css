@@ -3,7 +3,7 @@
     src: url('../font/fina/LibreFranklin-ExtraBold.ttf');
 }
 .Bold{
-    font-family: "LibreFranklin-EstraBol";
+    font-family: "LibreFranklin-ExtraBolt";
 }
 @font-face{
     font-family: "LibreFranklin-ExtraBlackItalic";
@@ -54,4 +54,9 @@
 }
 .semi-bold-italic{
     font-family: "LibreFranklinSemiBoldItali";
+}
+
+.titulo-2{
+    color: #606060;
+    font-size: 30px;
 }

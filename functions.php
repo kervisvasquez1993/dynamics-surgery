@@ -195,7 +195,7 @@ add_action( 'init', 'modificar_post_object' );
 function add_custom_pt( $query ) {
     if ( !is_admin() && $query->is_main_query() ) {
         if ( $query->is_search ) {
-            $query->set( 'category', array('productos'));
+            $query->set( 'post');
         }
     }
 }
