@@ -89,10 +89,20 @@ function widgets_sidebar(){
     register_sidebar(
         array('name' => 'post relations',
         'id' => 'post_relations',
-        'before_widget' => '<div class"post_relation">',
+        'before_widget' => '<div class="post_relation">',
         'after_widget' => '</div>',
         'before_title' => '<h5 class="text-ligth">',
         'after_title' => '</h5>'
+             ));
+    register_sidebar(
+        array('name' => 'post relations products',
+        'id' => 'post_relations_products',
+        'before_widget'=> '<div class="post_relation_products">',
+        'after_widget' => '</div>',
+        'before_title' => '<h5 class="text-ligth_products">',
+        'after_title'  => '</h5>',
+        'before_title' => '<h3 class="medium center">',
+        'after_title'  => '</h3>'
              ));
                      
 }

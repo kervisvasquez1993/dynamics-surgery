@@ -6,7 +6,7 @@
 ?>
 
 
-<div class="container">
+<div class="container container-single">
     <section class="row producto-principal-single">
                     <div class="wrappers-single">
                        <h3><?php the_title();?></h3>
@@ -43,13 +43,12 @@
         </div>
     <?php endforeach;?>
     </section>
+    <aside class="col">
+             <?php if(!is_active_sidebar( 'post_relations_products' )){return;}
+                 dynamic_sidebar('post_relations_products');
+              ?>                
+           </aside>
 </div>
 <?php endwhile;?>
 <?php get_footer();?>
 
-<form role="search" method="get" class="flex-seach" action="<?php echo home_url( '/' ); ?>">
-       <input   type="search" class=" autocomplete"  placeholder="<?php echo esc_attr_x( 'buscar', 'placeholder' ) ?>"
-                value="<?php echo get_search_query() ?>" name="s"
-                title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-                
-</form>

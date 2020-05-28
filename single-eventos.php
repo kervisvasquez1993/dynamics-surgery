@@ -27,8 +27,8 @@
        
            </div>
            <div class="sidebar_single">
-        <?php get_sidebar();?>
-        </div>
+                <?php get_sidebar();?>
+           </div>
     
     
     

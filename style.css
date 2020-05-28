@@ -18,6 +18,31 @@ Use it to make something cool, have fun, and share what you've learned with othe
   flex-direction: column;
   margin: 50px;
 }
+.container-single{
+  min-height: 100vh;
+ 
+}
+div.post_relation_products ul 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+div.post_relation_products ul li a 
+{
+  color: #000000;
+}
+
+div.post_relation_products ul li{
+  width: 20%;
+  border: 1px  #348fb0 solid;
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .iconos-nosotros
 {
   
@@ -31,6 +56,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
   align-items: flex-start;
   width: 50%;
 }
+
+.centrar-titulo
+{
+  
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
 .paginacion{
   width: 100vw;
   display: flex;
@@ -208,7 +244,7 @@ width: 100px;
 }
 .titulo-border2{
   border-bottom: 4px solid #388faf !important;
-  width: 50%;
+  width: 20%;
 }
 .btn-grueso{
   width: 20vw;
@@ -739,6 +775,15 @@ img {
 }
 
 @media (min-width: 768px) {
+
+  .centrar-titulo
+{
+   width: 50vw;
+}
+.div.post_relation_products ul li
+{
+  width: 25%;
+}
   .category_id
   {
     display: flex;
@@ -917,6 +962,15 @@ img {
 }
 @media (min-width: 993px) {
 
+  .div.post_relation_products ul li
+{
+  width: 20% !important;
+  background: red;
+}
+  .centrar-titulo
+  {
+     width: 25vw;
+  }
   .logo{
     width: 30%;
   }

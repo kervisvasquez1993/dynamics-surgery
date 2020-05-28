@@ -12,6 +12,7 @@
         
       <section class="header-productos">
                 <h4 class="semi-bold titulo-2"><?php the_field('title-2')?></h4>
+                <div class="titulo-border"></div>
                 <?php the_content();?>
           
         </section>

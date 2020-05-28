@@ -1,15 +1,18 @@
 <?php get_header();?>
 <?php while(have_posts()): the_post();?>
-        <div class="img-hero" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
-        <h2 class="center color-font-header texto-center"><?php the_field('titulo_cabecera');?></h2>
+        <div class="img-hero2" style="background:url('<?php echo get_the_post_thumbnail_url();?>');">
+        <h2 class="center color-font-header texto-center Bold"><?php the_field('titulo_cabecera');?></h2>
         </div>
         
 <?php get_template_part( 'template-parts/menu', 'interno' );
         t
 ?>
 <div class="container">
-            <h4 class="titulo-nosotros semi-bold titulo-2"><?php the_field('sub_titulo');?></h4>
-        
+            <div class="centrar-titulo"> 
+                 <h4 class="titulo-nosotros semi-bold titulo-2"><?php the_field('sub_titulo');?></h4>
+                 <div class="
+                 "></div>
+            </div>
         <section class="parent-quienes-somos">
             <div>
                 <?php the_content();?>
