@@ -16,7 +16,7 @@
     font-family: "LibreFranklin-light";
     src: url('../font/fina/LibreFranklin-Light.ttf');
 }
-.light{
+.light, p{
     font-family: "LibreFranklin-light";
 }
 @font-face{

@@ -23,24 +23,23 @@
   ?>
 
 <div class="min-heigth">
-<section class="section  background-principal texto-important no-pad-bot">
+<section class="section  Bold height-40 background-principal texto-important no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light color-white"><?php the_content();?></h5>
+          <h5 class="header col s12 Bold font-size-35 color-white Bold"><?php the_content();?></h5>
         </div>
       </div>
 </section>
-<section class="section  container no-pad-bot ">
-      
-        <div class="row producto-destacado-front productao-principal ">
-             <?php producto_destacado(1);?>
-        </div>
-        
+<section class="section height-50  container no-pad-bot">
+      <div class="row producto-destacado-front producto-principal">
+         <?php producto_destacado(1);?>
+      </div>
 </section>
+</div>
 
-<section class="grey paddin-vertical">
+<section class=" backfround-lineas paddin-vertical">
        <div class="titulo-wrapper color-titilo-secundario">
-           <h3>Nuetros Productos</h3>
+           <h3 class="semi-bold">Nuetros Productos</h3>
            <div class="titulo-border"></div>
        </div>
     <div class="container">
@@ -61,7 +60,7 @@
 
   <section >
        <div class="titulo-wrapper color-titilo-secundario">
-           <h3>Eventos</h3>
+           <h3 class="semi-bold">Eventos</h3>
            <div class="titulo-border"></div>
        </div>
        <div class="eventos-front">

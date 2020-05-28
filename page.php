@@ -8,7 +8,7 @@
         t
 ?>
 <div class="container">
-            <h4 class="titulo-nosotros"><?php the_field('sub_titulo');?></h4>
+            <h4 class="titulo-nosotros semi-bold titulo-2"><?php the_field('sub_titulo');?></h4>
         
         <section class="parent-quienes-somos">
             <div>

@@ -27,7 +27,7 @@ function kervis_query_productos($cantidad = -1)
                      <a href="<?php echo get_category_link($link)?>">
                             <span class="card-title-flex">
                                 <span class="raya"></span>
-                                <p class="titulo-product"><?php the_title();?></p>
+                                <p class="titulo-product medium"><?php the_title();?></p>
                             </span>
                      </a>
                      <p class="muestra-content">
@@ -61,7 +61,7 @@ function carousel($cantidad){
            <a href="<?php echo get_category_link($link)?>">
              <span class="card-title-flex">
                  <span class="raya"></span>
-                 <p class="titulo-product"><?php the_title();?></p>
+                 <h6 class="titulo-product medium"><?php the_title();?></h6>
              </span>
            </a>
            <p class="muestra-content">
@@ -92,7 +92,7 @@ function eventos_front($cantidad = -1)
                        </div>
                        <div class="card-content">
                           <span class="card-title">
-                              <a href="<?php the_permalink();?>"><?php the_title();?></a>
+                              <a  class="semi-bold" href="<?php the_permalink();?>"><?php the_title();?></a>
                             </span>
                           <div class="flex">
                              <p><?php the_field('fecha');?></p>
@@ -157,16 +157,14 @@ function producto_destacado($cantidad)
             ?>
             <div class="wrappers ">
               
-                <h3 class="color-titulos"><?php the_title();?></h3>
-                <p>
+                <h3 class="color-titulos titulo-3 medium"><?php the_title();?></h3>
+                <p class="light">
                     <?php echo excerpt(70);?>
                 </p>
                 <a href="<?php the_permalink();?>" class="btn background-boton">LEER MAS</a>
-
             </div>
             <div class= "product-destacado">
                 <?php the_post_thumbnail( 'mediano', array('class' => 'card-img-top') );?>
-        
             </div>
     <?php
     endwhile;

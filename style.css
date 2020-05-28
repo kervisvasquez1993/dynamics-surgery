@@ -18,13 +18,32 @@ Use it to make something cool, have fun, and share what you've learned with othe
   flex-direction: column;
   margin: 50px;
 }
+.iconos-nosotros
+{
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+.iconos-nosotros .iconos-nosotros-hijos
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
 .paginacion{
   width: 100vw;
   display: flex;
   justify-content: center;
   
 }
-
+.black-color{
+  color: #000000;
+  font-size: 16px;
+}
+.font-mayor{
+  font-weight: bold;
+}
 .tag-cloud-link{
   color: #000000;
   font-size: 20pt !important;
@@ -32,14 +51,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .conatiner-slider .swiper-container3 {
   width: 100%;
   height: 100%;
-  background: red !important;
+ 
 }
 .conatiner-slider .swiper-container3 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
 }
-
+.producto-principal{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+  
+}
 .test-flex
 {
   display: flex;
@@ -60,10 +84,16 @@ width: 100px;
   cursor: pointer;
 }
 .min-heigth{
-  min-height: 100vh ;
+  min-height: 100vh !important;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.section.no-pad-bot{
+  min-height: 40vh;
+}
+.height-50{
+  min-height: 50vh;
 }
 .content-producntos{
   min-width: 80vw;
@@ -270,6 +300,7 @@ width: 100px;
 .color-font-header{
   color: #084054 !important;
   font-size: 45px;
+  position: relative;
 }
 .color-titulos{
   color: #388faf;
@@ -513,6 +544,18 @@ img{
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
+  position: relative;
+}
+.img-hero2::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    opacity: 0.3;
 }
 .texto-important {
   min-height: 30vh;
@@ -521,7 +564,11 @@ img{
   justify-content: center;
 }
 .producto-destacado-front{
-  min-height: 50vh;
+  
+  display: flex;
+  align-items: center;
+  
+  
 }
 img {
   width: 100%;
@@ -625,15 +672,22 @@ img {
 
 
 .menu-interno{
-  min-width: 25%;
+  min-width: 200px;
   min-height: 5vh;
-  
-  
- 
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
+.menu-interno2
+{
+  display: flex;
+  width: 210px;
+  min-height: 5vh;
+  align-items: center;
+  justify-content: space-between;
+}
 .menu-interno a{
-  font-weight: bold;
+  
   font-size: 18px;
 }
 .sister1{
@@ -855,9 +909,9 @@ img {
   .producto-principal-single,
   .producto-principal {
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 10px 0;
-
     justify-content: space-between;
   }
 }
@@ -897,16 +951,20 @@ img {
   .card-padre {
     width: 85%;
   }
-  .iconos-nosotros-hijos {
+  .iconos-nosotros .iconos-nosotros-hijos 
+  {
     width: 45%;
-
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+   
   }
   .iconos-nosotros {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
   }
   .parent-quienes-somos {
     padding: 50px 0;
@@ -1063,3 +1121,21 @@ height: 60px;}
   }
  .rel_posts > h3:nth-child(1){text-align:center;}
 }
+.wrappers h3.titulo-3{
+ font-size: 30px;
+
+}
+
+.font-size-35{
+  font-size: 35px;
+}
+h3{
+  font-size: 28px !important;
+}
+.titulo-wrapper h3{
+  font-size: 40px !important;
+  
+  }
+  .backfround-lineas{
+    background: #e8e8e8;
+  }
