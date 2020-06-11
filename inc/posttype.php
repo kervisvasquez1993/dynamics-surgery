@@ -72,8 +72,9 @@ function eventos() {
         'hierarchical'       => false,
         'menu_position'      => 6,
         'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' , 'genesis-cpt-archives-settings', 'genesis-seo', 'genesis-scripts', 'genesis-layouts', 'genesis-rel-author' ),
-        'taxonomies'          => array( 'post_tag' ),
+        'taxonomies'          => array( 'post_tag','tags' ),
     );
 
     register_post_type( 'eventos', $args );
 }
+

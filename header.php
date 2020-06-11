@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Interwebsite">
+    <meta name="apple-mobile-web-app-title" content="Dynamics Surgery">
     <!--link para imagen en apple-->
-    <link rel="apple-touch-icon" href="<?php  echo get_template_directory_uri();?>/img/icono.png">
+    <link rel="apple-touch-icon" href="<?php  echo get_template_directory_uri();?>/img/dynamic-surgery.png">
    <!--fin-->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#003663">
-    <meta name="application-name" content="Interwebsite">
+    <meta name="application-name" content="Dynamics Surgery">
     <!--link para imagen en el head-->
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/icono.png" sizes="200x200">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/dynamic-surgery.png" sizes="200x200">
 
     <title><?php bloginfo('title');?></title>
 

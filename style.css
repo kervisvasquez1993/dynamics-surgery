@@ -12,11 +12,39 @@ Tags:html, css, js, php, materialize, cmb2, acf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/*transicion
+propiedades
+
+
+*/
+
+
+
+
+
+
 .tagcloud > *{
   font-size: 15px;
   display: flex;
-  flex-direction: column;
-  margin: 50px;
+  flex-direction: row;
+  
+
+}
+.tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.tagcloud a.tag-cloud-link{
+  font-size: 12pt !important;
+  border: 1px solid black;
+  display: flex !important;
+  justify-content: center;
+  max-width: 40%;
+  margin: 10px;
+  color: #a2a2a2;
+  padding: 10px;
 }
 .container-single{
   min-height: 100vh;

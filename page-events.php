@@ -12,7 +12,7 @@
 <?php get_template_part( 'template-parts/menu', 'interno' ); ?>
 
   
-    <div class="container">
+<div class="container">
     <h2>Eventos</h2>
     <div class="row">
 
@@ -20,9 +20,9 @@
          <?php kervis_query_eventos(-1);?>
        </section>
        <?php get_sidebar();?>
-</div>
+    </div>
 
-</div>
+   
 </div>
         
 <?php get_footer();?>
