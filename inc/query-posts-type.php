@@ -122,7 +122,7 @@ function kervis_query_eventos($cantidad = -1)
 
          <div class="card-padre">
             <div class="card-header">
-                <h6><?php the_title();?></h6>
+                <h4 class="title-evento"><?php the_title();?></h4>
                 <div class="flex">
                     <div class="flex">
                         <p>Fecha:</p> <p><?php the_field('fecha');?></p>
@@ -141,7 +141,7 @@ function kervis_query_eventos($cantidad = -1)
                 <p>
                     <?php the_excerpt();?>
                 </p>
-                <a href="<?php the_permalink();?>" class="btn">Ver Más</a>
+                <a href="<?php the_permalink();?>" class="btn  btn-width btn-background">Ver Más</a>
             </div>
          </div>
 <?php endwhile;
@@ -161,7 +161,7 @@ function producto_destacado($cantidad)
                 <p class="light">
                     <?php echo excerpt(70);?>
                 </p>
-                <a href="<?php the_permalink();?>" class="btn background-boton">LEER MAS</a>
+                <a href="<?php the_permalink();?>" class="btn  background-boton">LEER MAS</a>
             </div>
             <div class= "product-destacado">
                 <?php the_post_thumbnail( 'mediano', array('class' => 'card-img-top') );?>

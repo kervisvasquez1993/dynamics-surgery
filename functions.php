@@ -83,7 +83,7 @@ function widgets_sidebar(){
         'id' => 'sidebar_widget',
         'before_widget' => '<div class="widget">',
         'after_widget' => '</div>',
-        'before_title' => '<h4 class="text-center text-ligth separador inverso">',
+        'before_title' => '<h4 class="text-center font-size-2 text-ligt italic separador inverso">',
         'after_title' => '</h4>'
              ));
     register_sidebar(

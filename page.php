@@ -10,8 +10,7 @@
 <div class="container">
             <div class="centrar-titulo"> 
                  <h4 class="titulo-nosotros semi-bold titulo-2"><?php the_field('sub_titulo');?></h4>
-                 <div class="
-                 "></div>
+                 <div class="titulo-border2"></div>
             </div>
         <section class="parent-quienes-somos">
             <div>
@@ -40,7 +39,7 @@
                 
                 
                 <?php the_field('contenido_eventos');?>
-                <a href="<?php the_permalink($evento->ID);?>" class="btn btn-leer-mas">LEER MÁS SOBRE NUESTROS EVENTOS </a>
+                <a href="<?php the_permalink($evento->ID);?>" class="btn btn-leer-mas btn-background">LEER MÁS SOBRE NUESTROS EVENTOS </a>
              
             </div>
 

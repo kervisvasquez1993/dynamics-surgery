@@ -23,13 +23,31 @@ propiedades
 
 
 
+/*btn color background*/
+  .btn-background
+  {
+    background: #848484 !important;
+  }
+  .btn-width{ 
+  width : 250px
+  }
 
+  .titulo-font-color{
+    color: #848484;
+  }
+/* fin btn*/
 .tagcloud > *{
   font-size: 15px;
   display: flex;
   flex-direction: row;
-  
-
+}
+.font-size-2{
+  font-size: 22px;
+  font-weight: 300;
+}
+.title-evento{
+  font-size: 2rem;
+  color: #60a1bb;
 }
 .tagcloud {
   display: flex;
@@ -273,6 +291,10 @@ width: 100px;
 .titulo-border2{
   border-bottom: 4px solid #388faf !important;
   width: 20%;
+}
+.titulo-border3{
+  border-bottom: 4px solid #388faf !important;
+  width: 50px;
 }
 .btn-grueso{
   width: 20vw;

@@ -13,7 +13,8 @@
 
   
 <div class="container">
-    <h2>Eventos</h2>
+    <h3 class="Bold titulo-font-color">Eventos</h3>
+    <div class="titulo-border3"></div>
     <div class="row">
 
        <section class=" col s12 m12 l8 ">
