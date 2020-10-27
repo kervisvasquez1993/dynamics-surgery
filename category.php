@@ -14,7 +14,7 @@
            <?php  $producto = get_page_by_title('Productos');
             $enlace_producto = $producto->ID;
            ?>
-           <a href="<?php the_permalink($enlace_producto);?>">
+           <a href="<?php ($enlace_producto);?>">
               Productos
             </a>
         </div>

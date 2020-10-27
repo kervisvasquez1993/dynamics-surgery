@@ -78,3 +78,44 @@ function eventos() {
     register_post_type( 'eventos', $args );
 }
 
+
+add_action( 'init', 'blog' );
+function blog() {
+    $labels = array(
+        'name'               => _x( 'Blog', 'surgery' ),
+        'singular_name'      => _x( 'Blog', 'post type singular name', 'surgery' ),
+        'menu_name'          => _x( 'Blog', 'admin menu', 'surgery' ),
+        'name_admin_bar'     => _x( 'Blog', 'add new on admin bar', 'surgery' ),
+        'add_new'            => _x( 'Add New', 'book', 'surgery' ),
+        'add_new_item'       => __( 'Add New Blog', 'surgery' ),
+        'new_item'           => __( 'New Blog', 'surgery' ),
+        'edit_item'          => __( 'Edit Blog', 'surgery' ),
+        'view_item'          => __( 'View Blog', 'surgery' ),
+        'all_items'          => __( 'All Blog', 'surgery' ),
+        'search_items'       => __( 'Search Blog', 'surgery' ),
+        'parent_item_colon'  => __( 'Parent Blog:', 'surgery' ),
+        'not_found'          => __( 'No Blog found.', 'surgery' ),
+        'not_found_in_trash' => __( 'No Blog found in Trash.', 'surgery' )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'description'        => __( 'Description.', 'Blog' ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'blog' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 6,
+        'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'page-attributes' , 'genesis-cpt-archives-settings', 'genesis-seo', 'genesis-scripts', 'genesis-layouts', 'genesis-rel-author' ),
+        'taxonomies'          => array( 'post_tag','tags', 'kervis' ),
+    );
+
+    register_post_type( 'blog', $args );
+}
+
+

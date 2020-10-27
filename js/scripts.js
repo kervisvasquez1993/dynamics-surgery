@@ -8,7 +8,7 @@ var search = document.querySelector(".content-menu2"),
   flexIconoMobile = document.querySelector(".flex-icono-mobile"),
   btnAtras = document.querySelector('.blue-content'),
   ifSliderr = document.querySelector('.swiper-container'),
-  ifSliderr2 = document.querySelector('.kervis-slide'),
+  ifSliderr2 = document.querySelector('.kervis-slider'),
   //seccion de las categorias
   categoryid = document.querySelectorAll('.category_id'),
   titleCategory = document.getElementById('title_Category')
@@ -128,11 +128,13 @@ var swiper = new Swiper('.swiper-container', {
 if(ifSliderr2)
 {
 var swiper = new Swiper('.kervis-slider', {
+  
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 });
+console.log('hola')
 }
 
 

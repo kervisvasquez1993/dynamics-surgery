@@ -144,6 +144,40 @@ function kervis_query_eventos($cantidad = -1)
                 <a href="<?php the_permalink();?>" class="btn  btn-width btn-background">Ver Más</a>
             </div>
          </div>
+         
+<?php endwhile;
+  
+
+}
+
+function kervis_query_blog($cantidad = -1)
+{
+    $args = array(
+        'post_type' => 'blog',
+        'posts_per_page' => $cantidad
+
+    );
+    $blog = new WP_Query($args);
+    while( $blog->have_posts()): $blog->the_post();
+        ?>
+
+         <div class="card-padre">
+            <div class="card-header">
+                <h4 class="title-evento"><?php the_title();?></h4>
+                
+            </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+              <?php the_post_thumbnail( 'mediano', array('class' => 'card-img-top') )?>
+              </div>
+            </div>
+            <div>
+                <p>
+                    <?php the_excerpt();?>
+                </p>
+                <a href="<?php the_permalink();?>" class="btn  btn-width btn-background">Ver Más</a>
+            </div>
+         </div>
 <?php endwhile;
 
 }

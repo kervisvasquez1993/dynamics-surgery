@@ -116,7 +116,7 @@ function crd_repeater_metaboxes()
 	$cmb = new_cmb2_box( array(
 		'id'            => 'beneficios y Caracteristicas',  // Belgrove Bouncing Castles
 		'title'         => 'Beneficios y Caracteristicas',
-		'object_types'  => array( 'post', ), // Post type
+		'object_types'  => array( 'post','productos' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
 		'show_names'    => true, // Show field names on the left
